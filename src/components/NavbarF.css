@@ -1,0 +1,44 @@
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Josefin Sans', sans-serif */
+
+.nav-fridge {
+    align-content: center;  
+    position: fixed;
+    top: 0;
+    width: 100%; 
+}
+
+.navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: flex-end;
+}
+
+.fridge-logo {
+    height:60px;
+    width: 40px;
+    background-image: url('https://s5.gifyu.com/images/fridge-stroke-orange-01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar-nav .nav-link.active{
+    color: #5bbcca;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    
+}
+.navbar-nav .nav-link {
+    color: #fb961f;
+    font-weight: bold;
+    
+
+}
+
+.navbar-nav .nav-link:hover {
+    font-weight: bold;
+    font-style: oblique;
+    
+}
+

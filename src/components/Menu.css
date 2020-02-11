@@ -1,0 +1,41 @@
+.main_menu {
+    align-content: space-around;
+    height: 300px;
+    margin-top: 100px;  
+    position: relative;
+}
+
+
+.slide_menu {
+    height: 50px;
+    background-color: #80D926;
+    margin-bottom: 30px;
+    animation-duration: 3s;
+    animation-name: slidein;
+    display: ;
+
+    
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 200%;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }
+
+
+/* .ingredients:hover {
+    transition: transform 2s;
+    transform: scaleX(25);
+} */
+
+.quick_menu {
+    animation-delay: 1s;
+}
+
+.world {
+    animation-delay: 2s; 
+}
