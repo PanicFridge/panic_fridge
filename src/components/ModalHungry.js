@@ -1,8 +1,9 @@
 
 import React, {Component} from 'react';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Container } from 'reactstrap';
 import './ModalHungry.scss';
 
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Container } from 'reactstrap';
+
 // import Counter from './Counter';
 
 class ModalHungry extends Component {
@@ -19,19 +20,25 @@ class ModalHungry extends Component {
 
   render(){
     return (
-      <div className="ModalHungry">
+      <div>
         <Container>
-          <Button onClick={this.toggleModal.bind(this)}>Hungry?</Button>
+          <Button id="modal-button" onClick={this.toggleModal.bind(this)}>Hungry?</Button>
         </Container>
         <Modal isOpen={this.state.modalState} toggle={this.toggleModal.bind(this)}>
-          <ModalHeader>
+          <ModalHeader id="modal-header">
            <p>Get Started!</p>
           </ModalHeader>
           <ModalBody>
-            <p>Soy el body</p>
+          <div className="list">
+            <ol>
+              <li>Select ingredients</li>
+              <li>Choose a country</li>
+              <li>No time? Pick a recipe of the day!</li>
+            </ol>
+            </div>
           </ModalBody>
-          <ModalFooter>
-            <Button color="primary" onClick={this.toggleModal.bind(this)}>X</Button>
+          <ModalFooter id="modal-footer" >
+            <Button id="close-button"  onClick={this.toggleModal.bind(this)}>X</Button>
           </ModalFooter>
         </Modal>
       </div>

@@ -21,10 +21,7 @@ class App extends Component {
       <Contenedor />
       <ModalHungry />
       <NavbarFBottom />
-      
-      
-     
-    </div>
+      </div>
     )
   }
 }
