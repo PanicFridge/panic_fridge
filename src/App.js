@@ -9,6 +9,7 @@ import NavbarF from './components/NavbarF';
 import {Button,Modal,Container,Card,Navbar} from 'reactstrap';
 
 
+
 class App extends Component {
   render(){
     return(
@@ -18,6 +19,8 @@ class App extends Component {
       <Fridge />
       <Menu />
       <ModalHungry />
+      
+      
      
     </div>
     )
