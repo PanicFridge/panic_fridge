@@ -2,61 +2,7 @@ body {
     background: url('https://s5.gifyu.com/images/food.jpg');
     font-family: 'Josefin Sans', sans-serif;
     }
-    /* .modalbox .box {
-        background-color: rgba(0, 0, 0, 0.479);
-        margin: 0 auto;
-        min-width: 210px;
-        padding: 80px;
-        margin-top: 250px;
-        }
-        .modalbox .title {
-        display: flex;
-        justify-content: center;
-        font-size: 22px;
-        margin: 0;
-        padding: 0 0 10px;
-        text-transform: uppercase;
-        color: #fff;
-            }
-        .modalbox .content {
-        display: flex;
-        justify-content: center;
-        font-size: 18px;
-        line-height: 22px;
-        padding: 10px;
-        color: #fff;
-            }
-        .modalbox .close {
-        color: #fff;
-        display: block;
-        float: right;
-        font-size: 22px;
-        height: 25px;
-        text-decoration: none;
-            }
-    .modalbox{
-        display: none;
-        position: fixed;
-        z-index: 9999;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        color:#333333;
-        }
-    .modalbox:target {
-        display: block;
-        outline: none;
-    }
-    .link-modal{
-        width: 90%;
-        text-align: center;
-        margin: 0 auto;
-        padding-top: 650px;
-        padding-left: 15px;
-    }*/
-
-
+   
  .btn.btn-secondary{
         background-color: #F8981D;
         border-color: #F8981D;
@@ -69,9 +15,25 @@ body {
         border-radius: 15px;
     }    
 
- .modal-backdrop{
+    #close-button{
+        background-color: #F8981D;
+        border-color: #F8981D;
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 3px 10px 3px 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 10px;
+    }    
+
+    #close-button:hover {
+        background-color: #5bbcca;
+        border-color: #5bbcca;
+      } 
+ /* .modal-backdrop{
         background-color: #F8CB28;
-    } 
+    }  */
     .modal-footer .btn-primary {
         color: #fff;
         background-color: #F8981D;
@@ -80,12 +42,44 @@ body {
     }
 
     .modal-title p{
-        margin-left: 170px;
+        font-size: 2em;
+        margin-left: 128px;
         font-weight: bold;
     }
 
+    .list{
+        font-weight: bold;
+        font-size: 1.2em;
+        line-height: 3rem;
+        
+    }
+
     //get rid of lines in modal
-/* 
-    .modal-header{
+
+    #modal-header{
         border-bottom: none;
-    } */
+    } 
+//This change takes line out of modal
+    #modal-footer{
+        border-top: none;
+    } 
+
+//Hungry? modal button
+    #modal-button{
+        background-color: #F8981D;
+        border-color: #F8981D;
+        box-shadow: none;
+    }
+
+    #modal-button:hover {
+        background-color: #5bbcca;
+        border-color: #5bbcca;
+      }
+//This changes the transparent background color from the default grey to yellow
+     .modal-backdrop.show {
+        background-color: #F8CB28;
+        opacity: 0.75;
+     }
+
+
+     
