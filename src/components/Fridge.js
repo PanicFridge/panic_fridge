@@ -5,9 +5,13 @@ import * as FBXLoader from "three-fbxloader-offical"
 import OrbitControls  from "three-orbitcontrols"
 import TWEEN from "@tweenjs/tween.js"
 import "./Fridge.scss"
+import "./Menu.css"
 
 class Fridge extends Component {
+  
   componentDidMount() {
+
+
     var OutlineShader = {
 
       uniforms: {
@@ -32,9 +36,12 @@ class Fridge extends Component {
         "}"
     
       ].join('\n')
+
+    
     
     };
-  
+
+
     // -----------------------------------------------------
     var renderer = new THREE.WebGLRenderer( { alpha: true } );
     var container = document.getElementById( 'container' );
@@ -147,6 +154,11 @@ class Fridge extends Component {
         }
     
         door.userData.isOpen = !door.userData.isOpen;
+
+        // document.getElementById('menu').click();
+        document.getElementById('menu').classList.toggle('toggleDisplay');
+        document.getElementById('menu-open-button').click();
+        document.getElementById('menu-open-button').classList.toggle('toggleDisplay');
     
       }
     
@@ -165,6 +177,8 @@ class Fridge extends Component {
     
         door = which ? bottomDoor : bottomDoor;
         toggleDoor( door );
+
+        
     
       }
     
@@ -192,9 +206,23 @@ class Fridge extends Component {
   }
   render() {
     return (
-      <div id="container">
-
+      <div>
+        <div id="container">
+        <nav class="menu toggleDisplay"  id="menu">
+          <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+          <label id="menu-open-button" class="menu-open-button" for="menu-open">
+            <span class="lines line-1"></span>
+            <span class="lines line-2"></span>
+            <span class="lines line-3"></span>
+          </label>
+          <a href="#" class="menu-item blue"> <i class="fa fa-anchor"></i> </a>
+          <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
+          <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+        </nav>  
+        </div>
+      
       </div>
+
     )
   }
 }

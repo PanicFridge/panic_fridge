@@ -1,14 +1,7 @@
 canvas{
     outline:none;
-    width: 800px !important;
-    height: 420px !important;
+    width: 70vw !important;
+    height: 70vh !important;
+    justify-content: right;
+    
 }
-
-@media screen and (min-width: 100px){
-    body{
-        canvas{
-            width:45% !important;
-        }
-    }
-}
-
