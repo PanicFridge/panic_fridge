@@ -21,10 +21,11 @@ class ModalHungry extends Component {
   render(){
     return (
       <div>
-        <Container>
+        <div className="container-modal">
           <Button id="modal-button" onClick={this.toggleModal.bind(this)}>Hungry?</Button>
-        </Container>
+        </div>
         <Modal isOpen={this.state.modalState} toggle={this.toggleModal.bind(this)}>
+      
           <ModalHeader id="modal-header">
            <p>Get Started!</p>
           </ModalHeader>
@@ -41,6 +42,7 @@ class ModalHungry extends Component {
             <Button id="close-button"  onClick={this.toggleModal.bind(this)}>X</Button>
           </ModalFooter>
         </Modal>
+        
       </div>
     );    
   }
