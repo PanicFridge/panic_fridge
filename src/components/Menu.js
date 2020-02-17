@@ -3,6 +3,7 @@ import './Menu.css';
 
 const Menu = () => {
     return (
+
             <nav class="menu">
                 <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
                 <label class="menu-open-button" for="menu-open">
@@ -14,6 +15,7 @@ const Menu = () => {
                 <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
                 <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
             </nav>
+        
     )    
 }
 
