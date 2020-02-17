@@ -7,7 +7,6 @@ import Title from './components/Title';
 import ModalHungry from './components/ModalHungry';
 import NavbarF from './components/NavbarF';
 import {Button,Modal,Container,Card,Navbar} from 'reactstrap';
-import Contenedor from "./components/Contenedor";
 import NavbarFBottom from './components/NavbarFBottom';
 
 
@@ -18,7 +17,8 @@ class App extends Component {
       <div className="App">
       <NavbarF />
       <Title />
-      <Contenedor />
+      <Fridge />
+      <Menu />
       <ModalHungry />
       <NavbarFBottom />
       </div>
