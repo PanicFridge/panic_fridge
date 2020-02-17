@@ -62,6 +62,8 @@ class App extends Component {
       <div className="App">
       <NavbarF />
       <Title />
+      <Fridge />
+      <Menu />
       <ModalHungry />
       <NavbarFBottom />
       </div>

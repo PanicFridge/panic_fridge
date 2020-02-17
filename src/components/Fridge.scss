@@ -2,6 +2,13 @@ canvas{
     outline:none;
     width: 800px !important;
     height: 420px !important;
-    justify-content: right;
-    
 }
+
+@media screen and (min-width: 100px){
+    body{
+        canvas{
+            width:45% !important;
+        }
+    }
+}
+
