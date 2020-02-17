@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Fridge from './components/Fridge'
 import './App.scss';
-import Menu from './components/Menu';
+// import Menu from './components/Menu';
 import Title from './components/Title';
 import ModalHungry from './components/ModalHungry';
 import NavbarF from './components/NavbarF';
@@ -25,6 +25,7 @@ import NavbarFBottom from './components/NavbarFBottom';
       }
     }))
 
+<<<<<<< HEAD
     .then((response) => {
       return response.json()
     })
@@ -56,6 +57,8 @@ import NavbarFBottom from './components/NavbarFBottom';
 export default App;
 */
 
+=======
+>>>>>>> 712df289154e1cbc9bf938bbe468244c7a1c5c67
 class App extends Component {
   render(){
     return(
@@ -63,7 +66,7 @@ class App extends Component {
       <NavbarF />
       <Title />
       <Fridge />
-      <Menu />
+      {/* <Menu /> */}
       <ModalHungry />
       <NavbarFBottom />
       </div>

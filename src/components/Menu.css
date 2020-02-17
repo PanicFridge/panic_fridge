@@ -309,4 +309,6 @@ a {
   text-decoration: underline;
 }
 
-@media screen and ()
+.toggleDisplay{
+  display: none;
+}
