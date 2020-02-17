@@ -3,10 +3,22 @@ import './Menu.css';
 
 const Menu = () => {
     return (
-        <div className="row col-6 main_menu">
-            <div className="slide_menu ingredients col-12"><h3>INGREDIENTS</h3></div>
-            <div className="slide_menu quick_menu col-12"></div>
-            <div className="slide_menu world col-12"></div>
+        <div className="main_menu">
+            <nav class="menu">
+                <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+                <label class="menu-open-button" for="menu-open">
+                    <span class="lines line-1"></span>
+                    <span class="lines line-2"></span>
+                    <span class="lines line-3"></span>
+                </label>
+
+                <a href="#" class="menu-item blue"> <i class="fa fa-anchor"></i> </a>
+                
+                <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
+                
+                <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+                
+            </nav>
 
         </div>
     )    
