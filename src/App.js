@@ -8,61 +8,75 @@ import ModalHungry from './components/ModalHungry';
 import NavbarF from './components/NavbarF';
 import {Button,Modal,Container,Card,Navbar} from 'reactstrap';
 import NavbarFBottom from './components/NavbarFBottom';
+//import { Router } from "react-router-dom";
+import FinalRecipe from './components/FinalRecipe';
 
-/*
+class App extends Component {
+
   state = {
-    recipeRandom: [],
-    isLoaded: false
+    recipeTitle: '',
+    recipeImage:'',
+    recipeInstructions:'',
+    recipeReadyInMinutes:'',
+    recipeServings:'',
+    
   }
 
   
-  componentDidMount(){
-    (fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=1&tags=vegetarian%252Cdessert", {
+  componentDidMount() { 
+    this.callingApi()
+  }
+
+  callingApi (){
+    fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=1", {
       "method": "GET",
       "headers": {
         "x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
         "x-rapidapi-key": "9f3dcab0dcmsh07fe862641b36d7p1dd96ejsn9d48b10f1174"
       }
-    }))
-
-<<<<<<< HEAD
+    })
     .then((response) => {
-      return response.json()
+      let responsedInfo = response.json()
+      return responsedInfo
     })
-    .then((json)=>{ 
-      return(
+    
+    .then((dataApi)=>{ 
         this.setState({
-          isLoaded: true,
-          items: json
+          recipeTitle: dataApi.recipes[0].title,
+          recipeImage: dataApi.recipes[0].image,
+          recipeInstructions: dataApi.recipes[0].instructions,
+          recipeReadyInMinutes:dataApi.recipes[0].readyInMinutes,
+          recipeServings: dataApi.recipes[0].servings,
+
         })      
+    })
+
+    .catch (()=>{
+      return (
+        <div>
+          <h1>LOADING..</h1>
+          <img src="" alt="gif cocinando"/>
+        </div>
       )
+
     })
   }
-  render(){
-    if(this.state.isLoaded === false){
-      return(
-        <div className="App">
-          <p>Loading...</p>
-        </div>
-      )
-    } else {
-      return(
-        <div className="App">
-          <p>CARGANDO</p>
-        </div>
-      )
-    }
-  }
-}
-export default App;
-*/
 
-=======
->>>>>>> 712df289154e1cbc9bf938bbe468244c7a1c5c67
-class App extends Component {
+
   render(){
     return(
       <div className="App">
+        {/*
+      <Router>
+        <Routes />
+        <Link to="/ingredients">Ingredients</Link>
+      </Router>*/}
+      {
+        this.state.recipeRandom === undefined
+        ? <p></p>
+        : <FinalRecipe title= {this.state.recipeTitle} image={this.state.recipeImage} servings={this.state.recipeServings} readyInMinutes={this.state.recipeReadyInMinutes} instructions={this.state.recipeInstructions}/>
+      }
+
       <NavbarF />
       <Title />
       <Fridge />
@@ -76,3 +90,10 @@ class App extends Component {
 
 
 export default App 
+
+
+
+
+
+
+

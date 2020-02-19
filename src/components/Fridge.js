@@ -208,16 +208,16 @@ class Fridge extends Component {
     return (
       <div>
         <div id="container">
-        <nav class="menu toggleDisplay"  id="menu">
-          <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
-          <label id="menu-open-button" class="menu-open-button" for="menu-open">
-            <span class="lines line-1"></span>
-            <span class="lines line-2"></span>
-            <span class="lines line-3"></span>
+        <nav className="menu toggleDisplay"  id="menu">
+          <input type="checkbox" href="#" className="menu-open" name="menu-open" id="menu-open" />
+          <label id="menu-open-button" className="menu-open-button" for="menu-open">
+            <span className="lines line-1"></span>
+            <span className="lines line-2"></span>
+            <span className="lines line-3"></span>
           </label>
-          <a href="#" class="menu-item blue"> <i class="fa fa-anchor"></i> </a>
-          <a href="#" class="menu-item red"> <i class="fa fa-heart"></i> </a>
-          <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+          <a href="#" className="menu-item blue"> <i className="fa fa-anchor"></i> </a>
+          <a href="#" className="menu-item red"> <i className="fa fa-heart"></i> </a>
+          <a href="#" className="menu-item orange"> <i className="fa fa-star"></i> </a>
         </nav>  
         </div>
       
