@@ -2,14 +2,12 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Fridge from './components/Fridge'
 import './App.scss';
-// import Menu from './components/Menu';
-import Title from './components/Title';
-import ModalHungry from './components/ModalHungry';
-import NavbarF from './components/NavbarF';
 import {Button,Modal,Container,Card,Navbar} from 'reactstrap';
-import NavbarFBottom from './components/NavbarFBottom';
-//import { Router } from "react-router-dom";
+import {BrowserRouter as Router, Link} from 'react-router-dom';
+import Routes from './components/Routes';
 import FinalRecipe from './components/FinalRecipe';
+import Home from './components/Home';
+
 
 class App extends Component {
 
@@ -18,8 +16,7 @@ class App extends Component {
     recipeImage:'',
     recipeInstructions:'',
     recipeReadyInMinutes:'',
-    recipeServings:'',
-    
+    recipeServings:''
   }
 
   
@@ -66,23 +63,16 @@ class App extends Component {
   render(){
     return(
       <div className="App">
-        {/*
-      <Router>
-        <Routes />
-        <Link to="/ingredients">Ingredients</Link>
-      </Router>*/}
       {
         this.state.recipeRandom === undefined
         ? <p></p>
         : <FinalRecipe title= {this.state.recipeTitle} image={this.state.recipeImage} servings={this.state.recipeServings} readyInMinutes={this.state.recipeReadyInMinutes} instructions={this.state.recipeInstructions}/>
       }
-
-      <NavbarF />
-      <Title />
-      <Fridge />
-      {/* <Menu /> */}
-      <ModalHungry />
-      <NavbarFBottom />
+      <Router>
+        <Routes />
+        <Link to="/ingredients">INGREDIENTS</Link>
+        <Link to="/recipe-of-the-day" >RECIPE OF THE DAY</Link>
+      </Router>
       </div>
     )
   }
