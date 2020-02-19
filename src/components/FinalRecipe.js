@@ -16,11 +16,11 @@ const FinalRecipe = () => {
                 </div>
 
                 <div class="col-12 features">
-                    <div class="col-4 servings">
+                    <div class="col-6 servings">
                         <img src="../../public/project-images/servings-icon.png" class="icon" alt="icono-servings">
                         <p>&nbsp;&nbsp;4 people</p>
                     </div>
-                    <div class="col-4 time">
+                    <div class="col-6 time">
                         <img src="../../public/project-images/cooking-time-icon.png" class="icon" alt="icono-time">
                         <p>&nbsp;&nbsp;30 minutes</p>
                     </div>
