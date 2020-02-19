@@ -1,6 +1,6 @@
 
 import React, {Component} from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Container } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import './ModalHungry.scss';
 
 

@@ -5,8 +5,8 @@ import './NavbarFBottom.scss';
 const NavBottom = () => {
     return (
     <div className='App nav-fridge-bottom'>
-          <footer class= "footer">
-            <div class="container">
+          <footer className= "footer">
+            <div className="container">
               <span>
               <ul className="navbar-footer">
                 <li className="col-sm-3"><a href="#"><img className="panic-fridge-icon"src="https://s4.gifyu.com/images/fridge-link-inverted-01.png" alt="panic fridge icon"/></a></li>
