@@ -45,7 +45,9 @@ class App extends Component {
           recipeReadyInMinutes:dataApi.recipes[0].readyInMinutes,
           recipeServings: dataApi.recipes[0].servings,
 
-        })      
+
+        })    
+        console.log(dataApi)  
     })
 
     .catch (()=>{
@@ -58,18 +60,18 @@ class App extends Component {
 
     })
   }
-
+  
 
   render(){
     return(
       <div className="App">
-      {
-        this.state.recipeRandom === undefined
+      {/* {
+        this.state === undefined
         ? <p></p>
         : <FinalRecipe title= {this.state.recipeTitle} image={this.state.recipeImage} servings={this.state.recipeServings} readyInMinutes={this.state.recipeReadyInMinutes} instructions={this.state.recipeInstructions}/>
-      }
+      } */}
       <Router>
-        <Routes />
+        <Routes title= {this.state.recipeTitle} image={this.state.recipeImage} servings={this.state.recipeServings} readyInMinutes={this.state.recipeReadyInMinutes} instructions={this.state.recipeInstructions}/>
         <Link to="/ingredients">INGREDIENTS</Link>
         <Link to="/recipe-of-the-day" >RECIPE OF THE DAY</Link>
       </Router>
