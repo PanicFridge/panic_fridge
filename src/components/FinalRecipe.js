@@ -23,7 +23,7 @@ https://s5.gifyu.com/images/servings-icon7efe58b90e05e545.png" className="icon" 
                         <p>{props.servings}</p>
                     </div>
                     <div className="col-4 time">
-                        <img src="https://s5.gifyu.com/images/cooking-time-icon-inverted.png" className="icon" alt="icono-time" />
+                        <img src="https://s4.gifyu.com/images/cooking-time-icon.png" className="icon" alt="icono-time" />
                         <p>{props.readyInMinutes}</p>
                     </div>
                 </div>
