@@ -54,7 +54,7 @@ class App extends Component {
       return (
         <div>
           <h1>LOADING..</h1>
-          <img src="" alt="gif cocinando"/>
+          <img src="https://gifyu.com/image/78Fv" alt="gif cocinando"/>
         </div>
       )
 
