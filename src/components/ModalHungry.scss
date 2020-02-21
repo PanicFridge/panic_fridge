@@ -16,8 +16,8 @@ body {
     }    
 
     #close-button{
-        background-color: #F8981D;
-        border-color: #F8981D;
+        background-color: #5bbcca;
+        border-color: #5bbcca;
         color: white;
         font-size: 1.5em;
         font-weight: bold;
@@ -28,8 +28,8 @@ body {
     }    
 
     #close-button:hover {
-        background-color: #5bbcca;
-        border-color: #5bbcca;
+        background-color: #F8981D;
+        border-color: #F8981D;
       } 
  /* .modal-backdrop{
         background-color: #F8CB28;
@@ -44,14 +44,21 @@ body {
     .modal-title p{
         font-size: 2em;
         margin-left: 128px;
+        margin-top: 20px;
         font-weight: bold;
     }
 
+    .modal-title h4{
+        margin-left: 20px;
+        font-size: 1.1em;
+        padding-top: 15px;
+    }
     .list{
         font-weight: bold;
         font-size: 1.2em;
         line-height: 3rem;
-        
+        padding-right: 35px;
+        padding-left: 35px;
     }
 
     //get rid of lines in modal
@@ -66,14 +73,14 @@ body {
 
 //Hungry? modal button
     #modal-button{
-        background-color: #F8981D;
-        border-color: #F8981D;
+        background-color: #5bbcca;
+        border-color: #5bbcca;
         box-shadow: none;
     }
 
     #modal-button:hover {
-        background-color: #5bbcca;
-        border-color: #5bbcca;
+        background-color: #F8981D;
+        border-color: #F8981D;
       }
 //This changes the transparent background color from the default grey to yellow
      .modal-backdrop.show {
