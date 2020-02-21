@@ -25,12 +25,9 @@ class App extends Component {
   }
 
   callingApi (){
-    fetch("https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=1", {
+    fetch("https://www.themealdb.com/api/json/v1/1/random.php", {
       "method": "GET",
-      "headers": {
-        "x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
-        "x-rapidapi-key": "9f3dcab0dcmsh07fe862641b36d7p1dd96ejsn9d48b10f1174"
-      }
+      
     })
     .then((response) => {
       let responsedInfo = response.json()
@@ -39,11 +36,11 @@ class App extends Component {
     
     .then((dataApi)=>{ 
         this.setState({
-          recipeTitle: dataApi.recipes[0].title,
-          recipeImage: dataApi.recipes[0].image,
-          recipeInstructions: dataApi.recipes[0].instructions,
-          recipeReadyInMinutes:dataApi.recipes[0].readyInMinutes,
-          recipeServings: dataApi.recipes[0].servings,
+          recipeTitle: dataApi.meals[0].strMeal,
+          recipeImage: dataApi.meals[0].strMealThumb,
+          recipeInstructions: dataApi.meals[0].strInstructions,
+          recipeReadyInMinutes:dataApi.meals[0].readyInMinutes,
+          recipeServings: dataApi.meals[0].servings,
 
 
         })    
@@ -54,7 +51,11 @@ class App extends Component {
       return (
         <div>
           <h1>LOADING..</h1>
+<<<<<<< HEAD
           <img src="https://gifyu.com/image/78Fv" alt="gif cocinando"/>
+=======
+          <img src="" alt="gif sarten"/>
+>>>>>>> 87e220d16d1bc22049e679fb69d7d2e261b44d3a
         </div>
       )
 
@@ -72,8 +73,6 @@ class App extends Component {
       } */}
       <Router>
         <Routes title= {this.state.recipeTitle} image={this.state.recipeImage} servings={this.state.recipeServings} readyInMinutes={this.state.recipeReadyInMinutes} instructions={this.state.recipeInstructions}/>
-        <Link to="/ingredients">INGREDIENTS</Link>
-        <Link to="/recipe-of-the-day" >RECIPE OF THE DAY</Link>
       </Router>
       </div>
     )
