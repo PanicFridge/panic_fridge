@@ -28,13 +28,14 @@ class ModalHungry extends Component {
       
           <ModalHeader id="modal-header">
            <p>Get Started!</p>
+           <h4>Are you hungry with no idea what to eat?</h4>
           </ModalHeader>
           <ModalBody>
           <div className="list">
             <ol>
-              <li>Select ingredients</li>
-              <li>Choose a country</li>
-              <li>No time? Pick a recipe of the day!</li>
+              <li>Click on the fridge</li>
+              <li>Select World food, Ingredients or Recipe of the day!</li>
+              <li>Start cooking!</li>
             </ol>
             </div>
           </ModalBody>
