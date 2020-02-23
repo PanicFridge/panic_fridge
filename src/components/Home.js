@@ -13,10 +13,10 @@ const Home = () => {
     return (
         <div>
             <NavbarF />
-      <Title />
-      <Fridge />
-      <ModalHungry />
-      <NavbarFBottom />
+            <Title />
+            <Fridge />
+            <ModalHungry />
+            <NavbarFBottom />
         </div>
     )
 }

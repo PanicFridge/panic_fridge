@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-/*  import Country from './Country' */
+import Countries from './Countries';
 import './SearchbarCountry.scss'; 
 
 //Ponemos App como un class component porque queremos acceder al estado
@@ -22,11 +22,11 @@ class SearchbarCountry extends Component {
       return country.toLowerCase().includes(this.state.inputText.toLowerCase())
     })
 
-    //Hacemos un loop a los paises dentro del estado y metemos la info en Country
+    //Hacemos un loop a los paises dentro del estado y metemos la info en Countries
     let countries = filteredArray.map((country, index)=>{
       return (
         <div className="blue_color">
-          <Country key={index} pais={country}/>
+          <Countries key={index} pais={country}/>
         </div>
       )
         
