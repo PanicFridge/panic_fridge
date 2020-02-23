@@ -1,15 +1,53 @@
 import React, {Component} from 'react';
 import Countries from './Countries';
+
 import './SearchbarCountry.scss'; 
 
 //Ponemos App como un class component porque queremos acceder al estado
 class SearchbarCountry extends Component {
 
   state = {
-    countriesList: ['Francia', 'Chile', 'China', 'Australia', 'Guinea', 'Nigeria', 'Portugal', 'Alemania', 'Brasil', 'Andorra'],
+    countriesList: [],
     inputText: ''
   }
 
+  componentWillMount() { 
+    this.callingApiCountriesList()
+  }
+
+
+   // Función para llamar a la API con todos los paises
+   callingApiCountriesList (){
+    fetch("https://www.themealdb.com/api/json/v1/1/list.php?a=list", {
+      "method": "GET",
+      
+    })
+    .then((response) => {
+      let responsedInfo = response.json()
+      return responsedInfo
+    })
+    
+    .then((dataApi)=>{
+      let newArray = [];
+      dataApi.meals.forEach((ciudad)=>{
+      newArray.push(ciudad.strArea)
+      })
+        this.setState({
+          countriesList: newArray,
+        })  
+        
+    })
+    .catch (()=>{
+      return (
+        <div>
+          <h1>LOADING..</h1>
+          <img src="https://gifyu.com/image/78Fv" alt="gif cocinando"/>
+        </div>
+      )
+    })
+
+  }
+  
   async changeInputText(info){
     await this.setState({
       inputText: info

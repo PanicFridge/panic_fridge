@@ -83,7 +83,7 @@ class App extends Component {
     })
   }
 
-  // Función para llamar a la API con receta paises
+  // Función para llamar a la API con receta por paises
   callingApiCountry (){
     fetch("https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian", {
       "method": "GET",
@@ -110,10 +110,9 @@ class App extends Component {
         </div>
       )
     })
-
   }
 
-  // Función para llamar a la API con receta ingredientes
+  // Función para llamar a la API con receta por ingredientes
   callingApiIngredient (){
     fetch("https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast", {
       "method": "GET",
@@ -140,39 +139,40 @@ class App extends Component {
         </div>
       )
     })
-
   }
 
-    // Función para llamar a la API con todos los paises
-    callingApiCountriesList (){
-      fetch("https://www.themealdb.com/api/json/v1/1/list.php?a=list", {
-        "method": "GET",
-        
-      })
-      .then((response) => {
-        let responsedInfo = response.json()
-        return responsedInfo
-      })
+    // Función para llamar a la API con la lista de todos los paises
+  callingApiCountriesList (){
+    fetch("https://www.themealdb.com/api/json/v1/1/list.php?a=list", {
+      "method": "GET",
       
-      .then((dataApi)=>{
-          let countriesArray = dataApi.meals[0].map((country)=>{
-            return country;
-          })
-          this.setState({
-            allCountries: countriesArray,
-          })  
-          
+    })
+    .then((response) => {
+      let responsedInfo = response.json()
+      return responsedInfo
+    })
+    
+    .then((dataApi)=>{
+      // Código para seleccionar solos los paises de dentro de los objetos
+      let newArray = [];
+      dataApi.meals.forEach((ciudad)=>{
+      newArray.push(ciudad.strArea)
       })
-      .catch (()=>{
-        return (
-          <div>
-            <h1>LOADING..</h1>
-            <img src="https://gifyu.com/image/78Fv" alt="gif cocinando"/>
-          </div>
-        )
-      })
-  
-    }
+      // Fin código
+      this.setState({
+        allCountries: newArray,
+      })  
+        
+    })
+    .catch (()=>{
+      return (
+        <div>
+          <h1>LOADING..</h1>
+          <img src="https://gifyu.com/image/78Fv" alt="gif cocinando"/>
+        </div>
+      )
+    })
+  }
   
   // Función para separar las frases de las instrucciones
 

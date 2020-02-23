@@ -2,7 +2,6 @@ import React from 'react';
 import './FinalRecipe.scss';
 import Routes from './Routes';
 
-
 const FinalRecipe = (props) => {
 
     return (
@@ -27,9 +26,7 @@ const FinalRecipe = (props) => {
                     </div>
                 </div>
                 <div className="col-12 description">
-                    
                     {props.instructions}
-
                 </div>
             </div>
         </div>
