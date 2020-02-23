@@ -71,6 +71,8 @@ p {
     width: 100%;
     align-self: center;
     display: flex;
+    position: relative;
+    
     
     
 	img {
@@ -85,12 +87,13 @@ p {
 }
 .title-box {
     position: absolute;
-    height: 12%;
+    width: 100%;
+    height: 25%;
     background-color: rgba(255, 255, 255, 0.541);
     align-self: flex-end;
     align-items: center;
-    justify-items: center;
-    width:100%;
+    
+    
 
 }
 
@@ -102,13 +105,8 @@ p {
     font-weight: bolder;
 	color: #2c2c2b;
     text-transform: uppercase;
-    margin: 1.5rem;
-    z-index: 1;
-    // I am trying to make two lines instead of one in certain cases that are two long, but I don't manage to break the text..
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
+    margin: 0.5rem;
+    justify-content: center ;
 	
 }
 
