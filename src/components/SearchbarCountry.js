@@ -1,15 +1,53 @@
 import React, {Component} from 'react';
-/*  import Country from './Country' */
+import Countries from './Countries';
+
 import './SearchbarCountry.scss'; 
 
 //Ponemos App como un class component porque queremos acceder al estado
 class SearchbarCountry extends Component {
 
   state = {
-    countriesList: ['Francia', 'Chile', 'China', 'Australia', 'Guinea', 'Nigeria', 'Portugal', 'Alemania', 'Brasil', 'Andorra'],
+    countriesList: [],
     inputText: ''
   }
 
+  componentWillMount() { 
+    this.callingApiCountriesList()
+  }
+
+
+   // Función para llamar a la API con todos los paises
+   callingApiCountriesList (){
+    fetch("https://www.themealdb.com/api/json/v1/1/list.php?a=list", {
+      "method": "GET",
+      
+    })
+    .then((response) => {
+      let responsedInfo = response.json()
+      return responsedInfo
+    })
+    
+    .then((dataApi)=>{
+      let newArray = [];
+      dataApi.meals.forEach((ciudad)=>{
+      newArray.push(ciudad.strArea)
+      })
+        this.setState({
+          countriesList: newArray,
+        })  
+        
+    })
+    .catch (()=>{
+      return (
+        <div>
+          <h1>LOADING..</h1>
+          <img src="https://gifyu.com/image/78Fv" alt="gif cocinando"/>
+        </div>
+      )
+    })
+
+  }
+  
   async changeInputText(info){
     await this.setState({
       inputText: info
@@ -22,11 +60,11 @@ class SearchbarCountry extends Component {
       return country.toLowerCase().includes(this.state.inputText.toLowerCase())
     })
 
-    //Hacemos un loop a los paises dentro del estado y metemos la info en Country
+    //Hacemos un loop a los paises dentro del estado y metemos la info en Countries
     let countries = filteredArray.map((country, index)=>{
       return (
         <div className="blue_color">
-          <Country key={index} pais={country}/>
+          <Countries key={index} pais={country}/>
         </div>
       )
         

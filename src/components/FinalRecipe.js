@@ -2,7 +2,6 @@ import React from 'react';
 import './FinalRecipe.scss';
 import Routes from './Routes';
 
-
 const FinalRecipe = (props) => {
 
     return (
@@ -18,8 +17,7 @@ const FinalRecipe = (props) => {
                 </div>
                 <div className="col-12 features">
                     <div className="col-4 servings">
-                        <img src="
-https://s5.gifyu.com/images/servings-icon7efe58b90e05e545.png" className="icon" alt="icono-servings" />
+                        <img src="https://s5.gifyu.com/images/servings-icon7efe58b90e05e545.png" className="icon" alt="icono-servings" />
                         <p>{props.servings}</p>
                     </div>
                     <div className="col-4 time">
