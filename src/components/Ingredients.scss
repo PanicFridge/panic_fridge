@@ -1,75 +1,161 @@
-.picture {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
+//No clue what is this about, I need to ask...
+@keyframes "App-logo-spin" {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
-.recipe_image{
-    width: 100%;
-    /* box-sizing: border-box; */
+/* Altered css for react project 2 */
+body {
+	background: url('https://s5.gifyu.com/images/food.jpg');
+	font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.recipe_title_container {
-    position: absolute;
-    width: 100%;
-    height: 20%;
-    background-color: white;
-    opacity: 0.3;
-    align-self: flex-end;
+.App {
+	text-align: center;
 }
-.title {
-    position: absolute;
-    width: 100%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    z-index: 1;
-    align-self: flex-end;
-    padding-left: 30px;
-    font-family: 'Raleway', sans-serif;
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
 }
-.title p {
-    font-size: 3.5vw;
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
-.col-12 {
-    padding-right: 0px;
-    padding-left: 0px;
+.App-link {
+	color: #61dafb;
 }
-.features {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.25rem;
-    border-bottom: 0.2px solid rgb(53, 56, 61);
-    height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+input {
+	margin-top: 200px;
+	width: 450px;
+	height: 1.8em;
+	background-color: rgba(248, 153, 29, 0.24);
+	border: none;
+	border-radius: 18px;
+	color: black;
+	font-size: 1.5em;
 }
-.icon {
-    width: 35px;
-    height: auto;
+.blue_color {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		margin-left: 10px;
+		width: 13px;
+	}
 }
 p {
-    margin-top: unset;
-    margin-bottom: unset;
-    font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.servings {
-    height: 60%;
-    display: flex;
-    align-items: center;    
-    border-radius: 10px;
-    text-align: left;
+.meals-grid {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	// display: grid;
+	// grid-template-columns: 1fr 1fr 1fr;
+	// grid-template-rows: auto;
 }
-.time {
-    height: 60%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;    
-    border-radius: 10px;
-}
-.description {
-    height: auto;
+.card-meal {
+ 
+	padding: 1rem;
     width: 100%;
-    padding: 30px 10px 0 10px;
-    text-align: justify;
+    align-self: center;
+    display: flex;
+    
+    
+	img {
+		height: auto;
+		width: 100%;
+		margin-top: 5px;
+        margin-bottom: 5px;
+        align-self: center;
+        border-radius: 0.5rem;
+        box-shadow: 10px 10px 37px -6px rgba(186,182,186,1);;
+	}
+}
+.title-box {
+    position: absolute;
+    height: 12%;
+    background-color: rgba(255, 255, 255, 0.541);
+    align-self: flex-end;
+    align-items: center;
+    justify-items: center;
+    width:100%;
+
+}
+
+.title-meal {
+    display: flex;
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-family: 'Raleway', ;
+    font-weight: bolder;
+	color: #2c2c2b;
+    text-transform: uppercase;
+    margin: 1.5rem;
+    z-index: 1;
+    // I am trying to make two lines instead of one in certain cases that are two long, but I don't manage to break the text..
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+	
+}
+
+.input-searchbar{
+    margin: 2rem;
+    font-size: 0.5 rem;
+    font-family: 'Roboto', ;
+	color: #3c4446;
+	text-transform: uppercase;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+}
+.another{
+    font-size: 0.5 rem;
+    font-family: Roboto;
+	color: #3c4446;
+    margin-top: 1rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+@media only screen and (max-width:480px) { 
+    /* Smartphone view: 1 tile */
+    .card-meal {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:650px) and (min-width:481px) { 
+    /* Tablet view: 2 tiles */
+    .card-meal {
+        width: 50%;
+    }
+}
+@media only screen and (max-width:1050px) and (min-width:651px) { 
+    /* Small desktop / ipad view: 3 tiles */
+    .card-meal {
+        width: 33.3%;
+    }
+}
+@media only screen and (max-width:1290px) and (min-width:1051px) { 
+    /* Medium desktop: 4 tiles */
+    .card-meal {
+        width: 25%;
+    }
 }

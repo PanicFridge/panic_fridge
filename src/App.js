@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Link} from 'react-router-dom';
 import Routes from './components/Routes';
 import FinalRecipe from './components/FinalRecipe';
 import Home from './components/Home';
+import Countries from './components/CountrySearch'
 
 
 class App extends Component {
