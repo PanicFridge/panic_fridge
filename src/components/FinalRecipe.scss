@@ -1,13 +1,14 @@
 .picture {
 
     width: 100%;
-    height: auto;
+    height: 85%;
     display: flex;
     justify-content: center;
 }
 
 .recipe_image{
     width: 100%;
+    
     /* box-sizing: border-box; */
 }
 .recipe_title_container {
@@ -42,13 +43,13 @@
 
 .features {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.25rem;
+    font-size: 0.8rem;
     border-bottom: 0.2px solid rgb(53, 56, 61);
-    height: 80px;
+    height: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: left;
+    text-align: left;
 }
 
 .icon {
@@ -80,5 +81,9 @@ p {
     width: 100%;
     padding: 30px 10px 0 10px;
     text-align: justify;
+}
+
+ol {
+    list-style-type: none;
 }
 

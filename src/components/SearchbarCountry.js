@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Countries from './Countries';
-
 import './SearchbarCountry.scss'; 
 
 //Ponemos App como un class component porque queremos acceder al estado
@@ -11,7 +10,7 @@ class SearchbarCountry extends Component {
     inputText: ''
   }
 
-  componentWillMount() { 
+  UNSAFE_componentWillMount() { 
     this.callingApiCountriesList()
   }
 
@@ -75,8 +74,10 @@ class SearchbarCountry extends Component {
   render(){
     return (
       <div className="App">
-        <input onChange={(event)=>this.changeInputText(event.target.value)} type="text"/>
+        <div className="search_bar">
+        <input placeholder="Write an international cuisine from the list" onChange={(event)=>this.changeInputText(event.target.value)} type="text"/>
         {this.renderCountries()}
+        </div>
       </div>
     );    
   }

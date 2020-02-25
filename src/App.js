@@ -12,11 +12,9 @@ import Home from './components/Home';
 class App extends Component {
 
   state = {
-    recipeTitle: '',
+    recipeTitle: false,
     recipeImage: '',
     recipeInstructions: '',
-    recipeReadyInMinutes: '',
-    recipeServings: '',
     instructionsArray: '',
     recipeIdCountry: '',
     recipeTitleCountry: '',
@@ -24,15 +22,16 @@ class App extends Component {
     recipeTitleIngredient: '',
     recipeImageIngredient: '',
     recipeIdIngredient: '',
-    allCountries: ''
+    allCountries: '',
+    completInfo: ''
   }
 
   
   componentDidMount() { 
     this.callingApiRandom()
-    this.callingApiCountry()
-    this.callingApiIngredient()
-    this.callingApiCountriesList()
+    // this.callingApiCountry()
+    // this.callingApiIngredient()
+    // this.callingApiCountriesList()
   }
 
   // Función para llamar a la API con receta random
@@ -47,16 +46,20 @@ class App extends Component {
     })
     
     .then((dataApi)=>{
-        this.setState({
-          recipeTitle: dataApi.meals[0].strMeal,
-          recipeImage: dataApi.meals[0].strMealThumb,
-          recipeInstructions: dataApi.meals[0].strInstructions,
-          recipeReadyInMinutes:dataApi.meals[0].readyInMinutes,
-          recipeServings: dataApi.meals[0].servings,
-        })    
+        // this.setState({
+        //   recipeTitle: dataApi.meals[0].strMeal,
+        //   recipeImage: dataApi.meals[0].strMealThumb,
+        //   recipeInstructions: dataApi.meals[0].strInstructions,
+
+        // })    
+
+        let recipeTitleVar = dataApi.meals[0].strMeal;
+        let recipeImageVar = dataApi.meals[0].strMealThumb;
+        let recipiInstructionsVar = dataApi.meals[0].strInstructions;
+        let recipeCompletInforVar = dataApi.meals;
 
         // Función para separar las frases de las instrucciones
-        let recipeSentence = [];
+        let recipeSentence = []
         function instrSeparator(text) {
           let sentenceArray = [];
           sentenceArray = text.split('.');
@@ -65,10 +68,15 @@ class App extends Component {
           })
         }
         // Lammada a la función
-        instrSeparator(dataApi.meals[0].strInstructions);
-        // Cambio del estado con las frases separadas dentro de un array
+        instrSeparator(recipiInstructionsVar);
+
+        // Cambio del estado
         this.setState({
           instructionsArray: recipeSentence,
+          recipeTitle: recipeTitleVar,
+          recipeImage: recipeImageVar,
+          recipeInstructions: recipiInstructionsVar,
+          completInfo: recipeCompletInforVar
         });
 
     })
@@ -194,27 +202,29 @@ class App extends Component {
   render () {
     return(
       <div className="App">
-      {/* {
-        this.state === undefined
-        ? <p></p>
-        : <FinalRecipe title= {this.state.recipeTitle} image={this.state.recipeImage} servings={this.state.recipeServings} readyInMinutes={this.state.recipeReadyInMinutes} instructions={this.state.recipeInstructions}/>
-      } */}
-   
-      <Router>
-        <Routes 
-          title= {this.state.recipeTitle} 
-          image={this.state.recipeImage} 
-          servings={this.state.recipeServings} 
-          readyInMinutes={this.state.recipeReadyInMinutes} 
-          instructions={this.state.instructionsArray} 
-          countryTitle={this.state.recipeTitleCountry} 
-          countryImage={this.state.recipeImageCountry} 
-          countryId={this.state.recipeIdCountry} 
-          ingredientImage={this.state.recipeImageIngredient} 
-          ingredientTitle={this.state.recipeTitleIngredient} 
-          ingredientId={this.state.recipeIdIngredient}
-          countriesList={this.state.allCountries} />
-      </Router>
+       {
+        this.state.recipeTitle === false
+        ? null
+        : (
+          <Router>
+            <Routes 
+              title= {this.state.recipeTitle} 
+              image={this.state.recipeImage} 
+              servings={this.state.recipeServings} 
+              readyInMinutes={this.state.recipeReadyInMinutes} 
+              instructions={this.state.instructionsArray} 
+              countryTitle={this.state.recipeTitleCountry} 
+              countryImage={this.state.recipeImageCountry} 
+              countryId={this.state.recipeIdCountry} 
+              ingredientImage={this.state.recipeImageIngredient} 
+              ingredientTitle={this.state.recipeTitleIngredient} 
+              ingredientId={this.state.recipeIdIngredient}
+              countriesList={this.state.allCountries}
+              generalInfo={this.state.completInfo}
+            />
+          </Router>          
+        )
+      }
       </div>
     )
   }
