@@ -14,7 +14,7 @@ const Routes = (props)=>{
         <Route path='/' exact component={Home} />
         <Route path="/ingredients" component={Ingredients} />
         <Route path="/world-food" component={CountrySearch} />
-        <Route path="/recipe-of-the-day" component={()=> <FinalRecipe image={props.image} title={props.title} instructions={props.instructions} servings={props.servings} readyInMinutes={props.readyInMinutes}/> } />
+        <Route path="/recipe-of-the-day" component={()=> <FinalRecipe image={props.image} title={props.title} instructions={props.instructions} servings={props.servings} readyInMinutes={props.readyInMinutes} info={props.generalInfo}/> } />
     </div>
   )
 }
