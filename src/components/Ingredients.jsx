@@ -33,19 +33,19 @@ export default class Ingredients extends Component {
     }
 
     printMeals = () => {
-        return this.state.results.map(meal => {
+        return this.state.results.map((meal) => {
             return (
                 // I tried to use bootstrap but I didn't manage because I don't know how to do different divs the card meal so we don't get repeated the same recipe 3 times in big devices..
                 // <div className="container">
                 //     <div className="row">
-                       
-                            <div className="card-meal" id = { meal.idMeal }>
+                //         <div className= "col-12 col-md-6 col-lg-3">
+                             <div className="card-meal" id = { meal.idMeal }>
                                 <div className="title-box">
                                     <h2 className="title-meal">{ meal.strMeal }</h2>
                                 </div>
                                 <img  src={ meal.strMealThumb } alt={ meal.strMeal }/>
                             </div>
-                       
+                        // </div>
                 //     </div>      
                 // </div>
                 
