@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react';
+import { Link } from "react-router-dom";
 import './Ingredients.scss';
+import Routes from './Routes';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 const axios = require('axios').default;
 
@@ -38,23 +40,29 @@ export default class Countries extends Component {
                     <div className="title-box">
                         <h2 className="title-meal">{ meal.strMeal }</h2>
                     </div>
-                    <img src={ meal.strMealThumb } alt={ meal.strMeal }/>
+                    <Link to="/world-food/world-food-recipe"><img src={ meal.strMealThumb } alt={ meal.strMeal }/></Link> 
+                
+                
                 </div>
+                
             )
         })
     }
 
     render (){
         return (
-            <Fragment>
+                <Fragment>
                 <input className="input-searchbar"type="text" onChange = { this.getResults }/>
             
                 {this.state.results !== null ?
                     <div className="meals-grid">{ this.printMeals() }</div> :
                     <div clasName="another">Sorry, please select another country</div>
                 }
-                
-            </Fragment>
+
+                </Fragment>
+            
+            
+
         )
     }
 }

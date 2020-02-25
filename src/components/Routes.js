@@ -1,12 +1,13 @@
 import React from 'react'
 import Ingredients from './Ingredients'
-// import WorldFood from './WorldFood'
+import WorldFinalRecipe from './WorldFinalRecipe';
 // import Home from './'
-//import SearchbarCountry from './SearchbarCountry'
 import FinalRecipe from './FinalRecipe'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import Home from './Home';
-import CountrySearch   from './CountrySearch'
+import CountrySearch   from './CountrySearch';
+
+
 
 const Routes = (props)=>{
   return(
@@ -15,6 +16,9 @@ const Routes = (props)=>{
         <Route path="/ingredients" component={Ingredients} />
         <Route path="/world-food" component={CountrySearch} />
         <Route path="/recipe-of-the-day" component={()=> <FinalRecipe image={props.image} title={props.title} instructions={props.instructions} servings={props.servings} readyInMinutes={props.readyInMinutes} info={props.generalInfo}/> } />
+        <Route path="/world-food/world-food-recipe" component={()=> <WorldFinalRecipe  idMeal={props.idMeal}/>
+        } />
+      
     </div>
   )
 }
