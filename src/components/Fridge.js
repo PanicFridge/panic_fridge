@@ -216,11 +216,9 @@ class Fridge extends Component {
             <span className="lines line-2"></span>
             <span className="lines line-3"></span>
           </label>
-          <Link to="" className="menu-item yellow">  <i className="fa fa-anchor"> </i> </Link>
-          <Link to="/recipe-of-the-day" className="menu-item red"> <i className="fa fa-heart"></i> </Link>
           <Link to="/ingredients" className="menu-item orange"> <i className="fa fa-star"></i> </Link>
-          
-          
+          <Link to="/World-food" className="menu-item yellow">  <i className="fa fa-anchor"> </i> </Link>
+          <Link to="/recipe-of-the-day" className="menu-item red"> <i className="fa fa-heart"></i> </Link>
         </nav>  
         </div>
       
