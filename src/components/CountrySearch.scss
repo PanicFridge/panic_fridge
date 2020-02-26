@@ -1,7 +1,7 @@
 
-.body {
-	background: url('https://s5.gifyu.com/images/World-food-background.png');
-	font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+.CountrySearch {
+    background-image: url("https://s5.gifyu.com/images/World-food-background.png");
+    min-height: 100vh;
 }
 
 input {
@@ -28,7 +28,7 @@ p {
 }
 .card-meal {
  
-	padding: 1rem;
+	margin: 1rem;
     width: 100%;
     align-self: center;
     display: flex;

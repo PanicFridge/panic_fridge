@@ -50,7 +50,7 @@ const FinalRecipe = (props) => {
     }
 
     return (
-        <div className="container">
+        <div className="container FinalRecipe">
             <div className="row">
                 <div className="col-12 picture">
                 <Link to="/"><NavbarF /></Link>

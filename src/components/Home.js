@@ -7,11 +7,12 @@ import NavbarFBottom from './NavbarFBottom';
 import FinalRecipe from './FinalRecipe';
 import Fridge from './Fridge';
 import {Link} from "react-router-dom";
+import './Home.scss'
 
 const Home = () => {
 
     return (
-        <div>
+        <div className='Home'>
             <Link to="/"><NavbarF /></Link>
             <Title />
             <Fridge />

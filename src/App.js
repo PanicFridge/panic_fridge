@@ -5,6 +5,7 @@ import './App.scss';
 import {Button,Modal,Container,Card,Navbar} from 'reactstrap';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
 import Routes from './components/Routes';
+import RoutesFinalRecipe from './components/RoutesFinalRecipe';
 import FinalRecipe from './components/FinalRecipe';
 import Home from './components/Home';
 import Countries from './components/CountrySearch'
@@ -192,7 +193,8 @@ class App extends Component {
         this.state.recipeTitle === false
         ? null
         : (
-          <Router>
+          <Router>           
+            <RoutesFinalRecipe idMeal=""/>     
             <Routes 
               title= {this.state.recipeTitle} 
               image={this.state.recipeImage} 

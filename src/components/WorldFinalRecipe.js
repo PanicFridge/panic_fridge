@@ -8,7 +8,7 @@ class WorldFinalRecipe extends Component {
             constructor (props){
                 super(props);
                 this.state={
-                    test:""
+                    id: props.idMeal
 
                 }
             }
