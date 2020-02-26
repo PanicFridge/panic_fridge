@@ -6,13 +6,13 @@ import {Button,Modal,Container,Card,Navbar} from 'reactstrap';
 import NavbarFBottom from './NavbarFBottom';
 import FinalRecipe from './FinalRecipe';
 import Fridge from './Fridge';
-
+import {Link} from "react-router-dom";
 
 const Home = () => {
 
     return (
         <div>
-            <NavbarF />
+            <Link to="/"><NavbarF /></Link>
             <Title />
             <Fridge />
             <ModalHungry />
