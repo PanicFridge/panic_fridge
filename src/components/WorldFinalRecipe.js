@@ -1,28 +1,29 @@
 import React, { Component } from 'react';
 import './FinalRecipe.scss';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Routes from './Routes';
 
 
 class WorldFinalRecipe extends Component {
-            constructor (props){
-                super(props);
-                this.state={
-                    id: props.idMeal
 
-                }
-            }
-            render(){
-                return(
-                   <div>
-                       <p>recetita aparece</p>
-                   </div>
-                )
-            }
+
+    componentDidMount(){
+
+        this.setState({
+            idMeal: this.props.match.params.hanlder
+        })
+
+    }
+
+    render(){
+        return(
+            <div>
+                {
+                    this.state != undefined
+                    ? <p>{this.state.idMeal}</p>
+                    : null
+                } 
+            </div>
+        )
+    }
 }
-
-
-
-
 
  export default WorldFinalRecipe;

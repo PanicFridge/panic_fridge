@@ -1,24 +1,15 @@
 import React from 'react'
-import Ingredients from './Ingredients'
 import WorldFinalRecipe from './WorldFinalRecipe';
-// import Home from './'
-import FinalRecipe from './FinalRecipe'
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import Home from './Home';
-import CountrySearch   from './CountrySearch';
+import {Route} from 'react-router-dom';
 
 
-
-const RoutesFinalRecipe = (props)=>{
+const RoutesFinalRecipe = ()=>{
   return(
     <div>
-        <Route path="/world-food/world-food-recipe" exact component={()=> <WorldFinalRecipe idMeal={props.idMeal}/>
-        } />
-      
+      <Route path="/world-food/:hanlder" exact component={WorldFinalRecipe} />
     </div>
   )
 }
-
 
 
 export default RoutesFinalRecipe
