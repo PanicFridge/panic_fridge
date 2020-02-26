@@ -226,19 +226,26 @@ a {
   transform: translate3d(-0.25084px, -104.9997px, 0);
 }
 
-.yellow {
+.orange {
   background-image: url(https://s5.gifyu.com/images/world-link-inverted-TEXT365279f30e5a8ce12.png);
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
   background-size: cover;
+  background-color:#FC913A;
   
 }
 
-.blue:hover {
-  color: #669AE1;
-  text-shadow: none;
+.menu-item.yellow:hover{
+  background-color: #f9e54e;
 }
 
+.menu-item.orange:hover{
+  background-color:#FC913A;
+}
+
+.menu-item.red:hover{
+  background-color: #e12e4b ;
+}
 
 .red {
   background-color: #e12e4b;
@@ -253,28 +260,19 @@ a {
   text-shadow: none;
 }
 
-.orange {
-  background-image:url(https://trello-attachments.s3.amazonaws.com/5e31b88490f2a03b31354692/5e4ea6584222760d1bdaed59/6215fda29651e48404d7c53460344522/ingredients-inverted-TEXT-02.png);
+.yellow {
+  background-image:url(https://s5.gifyu.com/images/Ingredients-inverted2-TEXT-02-02.png);
   background-size: cover;
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background-color: #f9e54e;
 }
 
-.orange:hover {
+.yellow:hover {
   color: #FC913A;
   text-shadow: none;
 }
 
-.lightblue {
-  background-color: #62C2E4;
-  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-}
-
-.lightblue:hover {
-  color: #62C2E4;
-  text-shadow: none;
-}
 
 .credit {
   margin: 24px 20px 120px 0;

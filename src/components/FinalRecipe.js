@@ -1,7 +1,8 @@
 import React from 'react';
 import './FinalRecipe.scss';
 import Routes from './Routes';
-
+import NavbarF from "./NavbarF";
+import {Link} from "react-router-dom";
 const FinalRecipe = (props) => {
 
     function showProcess() {
@@ -52,12 +53,14 @@ const FinalRecipe = (props) => {
         <div className="container">
             <div className="row">
                 <div className="col-12 picture">
+                <Link to="/"><NavbarF /></Link>
                     <img src={props.image} alt="recipe" className="recipe_image" />
                     <div className="recipe_title_container">
                     </div>
                     <div className="title">
                         <p>{props.title}</p>
                     </div>
+                    
                 </div>
                     <div className="col-4 features">
                             <ol className="ingredients">
