@@ -85,7 +85,7 @@ class App extends Component {
     .catch (()=>{
       return (
         <div>
-          <h1>LOADING..</h1>
+          <h1>Upssss.... ERROR</h1>
           <img src="https://gifyu.com/image/78Fv" alt="gif cocinando"/>
         </div>
       )
@@ -182,21 +182,6 @@ class App extends Component {
       )
     })
   }
-  
-  // Función para separar las frases de las instrucciones
-
-  // instrSeparator(text) {
-  //   let sentenceArray = [];
-  //   sentenceArray = text.split('.');
-  //   let recipeSentence = sentenceArray.filter((noEspaces)=>{
-  //       return noEspaces !== '';
-  //     })
-  //     console.log(recipeSentence)
-  //   this.setState({
-  //     instructions: recipeSentence
-  //   })
-  //   }
-  // instrSeparator(this.state.recipeInstructions);
 
   
 
