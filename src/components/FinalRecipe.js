@@ -30,10 +30,10 @@ const FinalRecipe = (props) => {
         }
         // console.log(ingredients,quantities)
         let ingredientsNoBlanks = ingredients.filter((noSpace)=>{
-            return noSpace !== ''
+            return (noSpace !== '' && noSpace !== null)
         })
         let quantitiesNoBlanks = quantities.filter((noSpace)=>{
-            return noSpace !== ''
+            return (noSpace !== '' && noSpace !== null)
         })
         
         let ingredientsArray = []
@@ -59,19 +59,19 @@ const FinalRecipe = (props) => {
                         <p>{props.title}</p>
                     </div>
                 </div>
-                <div className="col-12 features">
-                        <ol>
-                            {showIngredients()}
-                        </ol>
-                    {/* <div className="col-4 servings">
-                        <img src="https://s5.gifyu.com/images/servings-icon7efe58b90e05e545.png" className="icon" alt="icono-servings" />
-                        <p>{props.servings}</p>
+                    <div className="col-4 features">
+                            <ol className="ingredients">
+                                {showIngredients()}
+                            </ol>
+                        {/* <div className="col-4 servings">
+                            <img src="https://s5.gifyu.com/images/servings-icon7efe58b90e05e545.png" className="icon" alt="icono-servings" />
+                            <p>{props.servings}</p>
+                        </div>
+                        <div className="col-4 time">
+                            <img src="https://s4.gifyu.com/images/cooking-time-icon.png" className="icon" alt="icono-time" />
+                            <p>{props.readyInMinutes}</p>
+                        </div> */}
                     </div>
-                    <div className="col-4 time">
-                        <img src="https://s4.gifyu.com/images/cooking-time-icon.png" className="icon" alt="icono-time" />
-                        <p>{props.readyInMinutes}</p>
-                    </div> */}
-                </div>
                 <div className="col-12 description">
                
                     
