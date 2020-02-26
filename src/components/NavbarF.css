@@ -17,6 +17,10 @@ nav-fridge {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+	position: fixed;
+	top: 20px;
+	left: 45px;
+	
 }
 .navbar-nav {
 	.nav-link.active {
