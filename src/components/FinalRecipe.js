@@ -31,10 +31,10 @@ const FinalRecipe = (props) => {
         }
         // console.log(ingredients,quantities)
         let ingredientsNoBlanks = ingredients.filter((noSpace)=>{
-            return noSpace !== ''
+            return (noSpace !== '' && noSpace !== null)
         })
         let quantitiesNoBlanks = quantities.filter((noSpace)=>{
-            return noSpace !== ''
+            return (noSpace !== '' && noSpace !== null)
         })
         
         let ingredientsArray = []
