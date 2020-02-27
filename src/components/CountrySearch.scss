@@ -1,19 +1,13 @@
 
 .CountrySearch {
     background-image: url("https://s5.gifyu.com/images/World-food-background.png");
-    min-height: 100vh;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
     
 }
 
-// .meals-grid-countries {
-// 	width: 80%;
-// 	height: auto;
-// 	margin: 0 auto;
-// 	display: flex;
-// 	flex-direction: row;
-// 	flex-wrap: wrap;
-// }
-.meals-grid {
+.meals-grid-countries {
 	display: grid;
     grid-auto-flow: dense;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -41,13 +35,15 @@
     
 	.title-meal-countries {
 		display: flex;
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		line-height: 1.5em;
 		font-family: 'Raleway', ;
 		font-weight: bolder;
 		color: #2c2c2b;
 		margin: 0.5rem;
 		justify-content: center ;
+		text-transform: uppercase;
+
 			
 	}
 }
