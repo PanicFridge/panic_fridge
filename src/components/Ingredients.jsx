@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import './Ingredients.scss';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import {Link} from "react-router-dom";
@@ -36,13 +36,16 @@ export default class Ingredients extends Component {
 
     printMeals = () => {
         return this.state.results.map((meal) => {
-            return (
-                             <div className="card-meal" id = { meal.idMeal }>
-                                <div className="title-box">
-                                    <h2 className="title-meal">{ meal.strMeal }</h2>
+            return (    
+                        
+                            <div className="card-meal-ingredients" id = { meal.idMeal }>
+                                <div className="title-box-ingredients">
+                                    <h2 className="title-meal-ingredients">{ meal.strMeal }</h2>
                                 </div>
-                                <img  src={ meal.strMealThumb } alt={ meal.strMeal }/>
+                                <Link to="/ingredients/ingredients-recipe"><img className="image-recipe-ingredients" src={ meal.strMealThumb } alt={ meal.strMeal }/></Link>
                             </div>
+                        
+                             
                 
             )
         })
@@ -50,8 +53,8 @@ export default class Ingredients extends Component {
 
     render (){
         return (
-            <div>
-                <input className="input-searchbar" type="text" onChange = { this.getResults }/>
+            <div className="Ingredients">
+                <input className="input-searchbar-ingredients" type="text" onChange = { this.getResults }/>
                 <Link to="/"><NavbarF /></Link>
                 {this.state.results !== null ?
                     <div className="meals-grid">{ this.printMeals() } </div>:

@@ -37,3 +37,9 @@ nav-fridge {
 		}
 	}
 }
+
+@media (max-width: 991px){
+	.fridge-logo{
+		display:none;
+	}
+}

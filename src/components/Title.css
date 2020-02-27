@@ -1,11 +1,10 @@
 .box {
-    margin: 3em auto;
     display: block;
     }
   .dancingImg {
     width: 250px;
-    margin-top: -26px;
-    margin-bottom: -40px;
+    margin-top: 21px;
+    margin-bottom: -28px;
   }
   
   /* 
