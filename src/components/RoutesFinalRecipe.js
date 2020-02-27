@@ -9,11 +9,10 @@ import CountrySearch   from './CountrySearch';
 
 
 
-const RoutesFinalRecipe = (props)=>{
+const RoutesFinalRecipe = ()=>{
   return(
     <div>
-        <Route path="/world-food/world-food-recipe" exact component={()=> <WorldFinalRecipe idMeal={props.idMeal}/>
-        } />
+        <Route path="/world-food/:idMeal" exact component={WorldFinalRecipe}/>
       
     </div>
   )

@@ -27,20 +27,21 @@ class ModalHungry extends Component {
         <Modal isOpen={this.state.modalState} toggle={this.toggleModal.bind(this)}>
       
           <ModalHeader id="modal-header">
-           <p>Get Started!</p>
-           <h4>Are you hungry with no idea what to eat?</h4>
+           <p>No idea what to eat?</p>
           </ModalHeader>
           <ModalBody>
           <div className="list">
-            <ol>
-              <li>Click on the fridge</li>
-              <li>Select World food, Ingredients or Recipe of the day!</li>
-              <li>Start cooking!</li>
+            <ol className="counter">
+              <li>Click on the fridge.</li>
+              <li>Want an international cuisine experience? Select World Food.</li>
+              <li>Is your fridge full of food? Select Ingredients and search what you can make.</li>
+              <li>Feeling adventurous? Click on the Random Recipe!</li>
+              <li>Change of mind? Click on the orange fridge to return to the options.</li>
             </ol>
             </div>
           </ModalBody>
           <ModalFooter id="modal-footer" >
-            <Button id="close-button"  onClick={this.toggleModal.bind(this)}>X</Button>
+            <Button id="close-button"  onClick={this.toggleModal.bind(this)}>Start cooking!</Button>
           </ModalFooter>
         </Modal>
         

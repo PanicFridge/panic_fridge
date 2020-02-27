@@ -2,7 +2,7 @@
         background-color: #F8981D;
         border-color: #F8981D;
         color: white;
-        font-size: 1.5em;
+        font-size: 1.5rem;
         font-weight: bold;
         padding: 15px;
         text-decoration: none;
@@ -14,12 +14,13 @@
         background-color: #5bbcca;
         border-color: #5bbcca;
         color: white;
-        font-size: 1.5em;
+        font-size: 1.4rem;
         font-weight: bold;
         padding: 3px 10px 3px 10px;
         text-decoration: none;
         text-transform: uppercase;
         border-radius: 10px;
+        font-family: 'Roboto';
     }    
 
     #close-button:hover {
@@ -36,34 +37,34 @@
        
     }
 
-    .modal-title p{
-        text-align:center;
-        font-size: 2em;
-        margin-top: 20px;
-        font-weight: bold;
-    }
-
-    .modal-title h4{
-        text-align:center;
+  .modal-header p{
+        text-align: center;
         margin-bottom: 10px;
-        font-size: 1.1em;
+        font-size: 2.1rem;
         padding-top: 15px;
-        font-style: italic;
-    }
+        letter-spacing: -0.1rem;
+        font-weight: bold;
+        color: #333333;
+        font-family: 'Roboto';
+
+    } 
+
     .list{
         text-align: left;
-        font-size: 1.2em;
+        font-size: 1.2rem;
         line-height: 2rem;
         margin-bottom: -15px;
+        margin-left: 5%;
+        color: #333333;
+        letter-spacing: 0.1rem;
+        font-family: 'Roboto';
     }
 
-    .list ol{
-        list-style: decimal; 
-    }
 
     //get rid of lines in modal
 
     #modal-header{
+        justify-content: center;
         border-bottom: none;
         padding: none;
         margin-right: 5%;
@@ -72,6 +73,7 @@
 //This change takes line out of modal
     #modal-footer{
         border-top: none;
+        justify-content: center;
     } 
 
 //Hungry? modal button
@@ -91,6 +93,27 @@
         opacity: 0.75;
      }
 
-     
 
+  .counter {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      
+      .counter li {
+        counter-increment: step-counter;
+        margin-bottom: 5%;
+      }
+      
+      .counter li::before {
+        content: counter(step-counter);
+        font-size: 0.9em;
+        background-color: #5bbcca;
+        color: white;
+        font-weight: bold;
+        padding: 3px 8px;
+        border-radius: 3px;
+        margin-right: 2%;
+      }
+      
      
