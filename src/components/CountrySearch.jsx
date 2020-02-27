@@ -42,6 +42,8 @@ export default class Countries extends Component {
                         <h2 className="title-meal">{ meal.strMeal }</h2>
                     </div>
                     <Link to={"/world-food/" + meal.idMeal}><img src={ meal.strMealThumb } alt={ meal.strMeal }/></Link> 
+                
+                
                 </div>
                 
             )
