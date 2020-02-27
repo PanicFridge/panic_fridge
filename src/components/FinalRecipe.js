@@ -50,7 +50,7 @@ const FinalRecipe = (props) => {
     }
 
     return (
-        <div className="container FinalRecipe">
+        <div className="container-fliuid FinalRecipe">
             <div className="row">
                 <div className="col-12 picture">
                 <Link to="/"><NavbarF /></Link>
@@ -62,30 +62,23 @@ const FinalRecipe = (props) => {
                     </div>
                     
                 </div>
-                    <div className="col-4 features">
-                            <ol className="ingredients">
+                <div className="col-12 features">
+                        <ol className="ingredients">
                                 {showIngredients()}
-                            </ol>
-                        {/* <div className="col-4 servings">
-                            <img src="https://s5.gifyu.com/images/servings-icon7efe58b90e05e545.png" className="icon" alt="icono-servings" />
-                            <p>{props.servings}</p>
+                        </ol>
+
+                        <div className="layer">
                         </div>
-                        <div className="col-4 time">
-                            <img src="https://s4.gifyu.com/images/cooking-time-icon.png" className="icon" alt="icono-time" />
-                            <p>{props.readyInMinutes}</p>
-                        </div> */}
-                    </div>
+                </div>
+                
+                        
                 <div className="col-12 description">
-               
-                    
                         <ul>
                             {showProcess()}
-                        </ul>
-                        
-
-                    
-
+                        </ul> 
                 </div>
+                
+
             </div>
         </div>
     )
