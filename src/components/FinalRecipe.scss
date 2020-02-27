@@ -1,26 +1,29 @@
 .FinalRecipe {
 
     background-image: url("https://s5.gifyu.com/images/Recipe-of-the-day-background.png");
+    padding-right: 200px; 
+    padding-left: 200px;
 
     .picture {
-
         width: 100%;
-        height: 85%;
+        height: 700px;
         display: flex;
         justify-content: center;
+        overflow: hidden;
+
     }
     
     .recipe_image{
         width: 100%;
-        
-        /* box-sizing: border-box; */
+        object-fit: cover;
+        box-sizing: border-box;
     }
     .recipe_title_container {
         position: absolute;
         width: 100%;
         height: 20%;
         background-color: white;
-        opacity: 0.3;
+        opacity: 0.7;
         align-self: flex-end;
     }
     
@@ -32,13 +35,15 @@
         align-items: center;
         z-index: 1;
         align-self: flex-end;
-        padding-left: 30px;
         font-family: 'Raleway', sans-serif;
+
+        p {
+            font-size: 1.5rem;
+            padding-left: 30px;
+        }
     }
     
-    .title p {
-        font-size: 3.5vw;
-    }
+
     
     .col-12 {
         padding-right: 0px;
@@ -46,20 +51,36 @@
     }
     
     .ingredients {
-        
-    
+        flex-flow: column wrap;
+        display: flex;
+        width: 100%;
+        margin: 5px 0 0 0;
+
     }
     
+    .layer{
+        height: 150px;
+        width: 100%;
+        display: flex;
+        background-color: rgb(238, 145, 129);
+        position: absolute;
+        opacity: 0.4;
+        z-index: -1;
+    }
+
+
+
     .features {
         font-family: 'Raleway', sans-serif;
         font-size: 0.9rem;
         font-weight: 900;
-        border-bottom: 0.2px solid rgb(53, 56, 61);
-        height: 200px;
+        height: 150px;
         width: 100%;
         display: flex;
-        align-items: left;
         text-align: left;
+        margin: 15px auto;
+        z-index: 1;
+
     }
     
     .icon {
@@ -83,14 +104,18 @@
         height: 60%;
         display: flex;
         justify-content: flex-end;
-        align-items: center;    border-radius: 10px;
+        align-items: center;    
+        border-radius: 10px;
     }
     
+
     .description {
         height: auto;
         width: 100%;
-        padding: 30px 10px 0 10px;
+        padding: 20px 15px 0 0px;
         text-align: justify;
+        border: 0.3px gray solid;
+        margin-top: 30px;
     }
     
     ol {
