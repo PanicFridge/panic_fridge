@@ -4,6 +4,7 @@ import './CountrySearch.scss';
 import NavbarF from "./NavbarF";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 const axios = require('axios').default;
+// import Nav from './NavbarF';
 
 
 
@@ -37,26 +38,25 @@ export default class Countries extends Component {
     printMeals = () => {
         return this.state.results.map(meal => {
             return (
-                <div className="card-meal" id = { meal.idMeal }>
-                    <div className="title-box">
-                        <h2 className="title-meal">{ meal.strMeal }</h2>
+                <div>
+                    <div className="card-meal-countries" id = { meal.idMeal }>
+                        <div className="title-box-countries">
+                        <h2 className="title-meal-countries">{ meal.strMeal }</h2>
+                        </div>
+                        <Link to="/world-food/world-food-recipe"><img className="image-recipe-countries" src={ meal.strMealThumb } alt={ meal.strMeal }/></Link> 
                     </div>
-                    <Link to="/world-food/world-food-recipe"><img src={ meal.strMealThumb } alt={ meal.strMeal }/></Link> 
-                
-                
                 </div>
                 
             )
         })
     }
 
+
     render (){
         return (
-                
-                
+            
                 <div className="CountrySearch">
-                    
-                    <input className="input-searchbar"type="text" onChange = { this.getResults }/>
+                    <input className="input-searchbar-countries"type="text" onChange = { this.getResults }/>
                     <Link to="/"><NavbarF /></Link>
                     {this.state.results !== null ?
                         <div className="meals-grid">{ this.printMeals() }</div> :
@@ -64,8 +64,6 @@ export default class Countries extends Component {
                     } 
                 </div>
             
-            
-
         )
     }
 }
