@@ -37,11 +37,11 @@ export default class Countries extends Component {
     printMeals = () => {
         return this.state.results.map(meal => {
             return (
-                <div className="card-meal" id = { meal.idMeal }>
+                <div className="card-meal">
                     <div className="title-box">
                         <h2 className="title-meal">{ meal.strMeal }</h2>
                     </div>
-                    <Link to="/world-food/world-food-recipe"><img src={ meal.strMealThumb } alt={ meal.strMeal }/></Link> 
+                    <Link to={"/world-food/" + meal.idMeal}><img src={ meal.strMealThumb } alt={ meal.strMeal }/></Link> 
                 
                 
                 </div>
