@@ -5,17 +5,30 @@ import Routes from './Routes';
 
 
 class WorldFinalRecipe extends Component {
-            constructor (props){
-                super(props);
-                this.state={
-                    id: props.idMeal
 
-                }
-            }
+    state = {
+        apiCallInfo: ''
+    }
+
+    callingApiById(){
+
+        fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?i=' + this.props.match.params.idMeal)
+        .then((response)=>{
+            return response.json()
+        })
+        .then((responseJSON)=>{
+            console.log(responseJSON)
+        })
+    }
+
+    componentDidMount(){
+        this.callingApiById()
+    }
+
             render(){
                 return(
                    <div>
-                       <p>recetita aparece</p>
+                       <p>{this.props.match.params.idMeal}</p>
                    </div>
                 )
             }

@@ -194,7 +194,7 @@ class App extends Component {
         ? null
         : (
           <Router>           
-            <RoutesFinalRecipe idMeal=""/>     
+            <RoutesFinalRecipe/>     
             <Routes 
               title= {this.state.recipeTitle} 
               image={this.state.recipeImage} 
