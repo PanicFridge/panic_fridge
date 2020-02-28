@@ -43,8 +43,6 @@ export default class Countries extends Component {
                         <h2 className="title-meal-countries">{ meal.strMeal }</h2>
                     </div>
                     <Link to={"/world-food/" + meal.idMeal}><img className="image-recipe-countries" src={ meal.strMealThumb } alt={ meal.strMeal }/></Link> 
-                
-                
                 </div>
                 
             )
@@ -56,7 +54,7 @@ export default class Countries extends Component {
         return (
             
                 <div className="CountrySearch">
-                    <input className="input-searchbar-countries"type="text" onChange = { this.getResults }/>
+                    <input className="input-searchbar-countries"type="text" placeholder="Type an international cuisine from the list..." onChange = { this.getResults }/>
                     <Link to="/"><NavbarF /></Link>
                     {this.state.results !== null ?
                         <div className="meals-grid">{ this.printMeals() }</div> :
