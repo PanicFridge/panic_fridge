@@ -1,14 +1,14 @@
  .btn.btn-secondary{
-        background-color: #F8981D;
-        border-color: #F8981D;
-        color: white;
-        font-size: 1.5rem;
-        font-weight: bold;
-        text-decoration: none;
-        text-transform: uppercase;
-        border-radius: 12px;
-        margin-top: -10px;
-     
+     background-color: #F8981D;
+     border-color: #F8981D;
+     color: white;
+     font-size: 1.5rem;
+     font-weight: bold;
+     text-decoration: none;
+     text-transform: uppercase;
+     border-radius: 12px;
+     margin-top: -10px;
+
     }    
 
     #close-button{
@@ -97,8 +97,8 @@
 
 
   .counter {
-        margin: 0;
-        padding: 0;
+        margin-top: -19px;
+        padding: 1px;
         list-style-type: none;
       }
       
@@ -118,4 +118,12 @@
         margin-right: 2%;
       }
       
-     
+.modal-content{
+    margin-top: 66px;
+}
+
+@media (max-width:432px){
+    .modal-content{
+        margin-top: 10px;
+    }
+}
