@@ -124,7 +124,7 @@ class FinalRecipe extends Component {
                             <div className="recipe_title_container">
                             </div>
                         <div className="title">
-                            <p>{this.state.title}</p>
+                            <h2>{this.state.title}</h2>
                         </div>
                         
                     </div>
@@ -132,9 +132,6 @@ class FinalRecipe extends Component {
                             <ol className="ingredients">
                                     {this.showIngredients()}
                             </ol>
-    
-                            <div className="layer">
-                            </div>
                     </div>
                     
                             
