@@ -3,6 +3,7 @@ import './FinalRecipe.scss';
 import Routes from './Routes';
 import NavbarF from "./NavbarF";
 import {Link} from "react-router-dom";
+import NavbarFBottom from './NavbarFBottom';
 class FinalRecipe extends Component {
 
     constructor(props){
@@ -146,6 +147,7 @@ class FinalRecipe extends Component {
             
                 )
             }
+            <NavbarFBottom />
             </div>
 
         )

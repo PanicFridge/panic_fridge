@@ -127,3 +127,14 @@
         margin-top: 10px;
     }
 }
+
+
+@media (min-width:350px) and (max-width:600px){
+    .modal-content{
+        margin-top: -6px;
+        height: 665px;
+    }
+    #close-button{
+        margin-top: -37px;
+    }
+}

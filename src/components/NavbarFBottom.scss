@@ -38,17 +38,17 @@
 
 }
 .suggestion-icon {
-	width: 4vw;
+	width: 9vw;
 	align-self: center;
 }
 .ingredients-icon {
-	width: 4vw;
+	width: 9vw;
 }
 .world-icon {
-	width: 4vw;
+	width: 9vw;
 }
 .panic-fridge-icon {
-	width: 4vw;
+	width: 9vw;
 }
 
 .navbar-footer {
@@ -68,7 +68,8 @@
 	background-color: #f9e64f;
 	display: inline-flex;
     flex-direction: row;
-    justify-content: space-between;
+	justify-content: space-between;
+	z-index: 9999;
 }
 
 
@@ -80,5 +81,62 @@
 		display: none;
 	}
 	}
+
+@media (max-width: 503px){
+	.footer{
+	.suggestion-icon {
+			width: 11vw;
+		}
+		.ingredients-icon {
+			width: 11vw;
+		}
+		.world-icon {
+			width: 11vw;
+		}
+		.panic-fridge-icon {
+			width: 11vw;
+		}
+
+	}
+	
+}
+
+@media (min-width:564px) and (max-width:760px){
+	.footer{
+	.suggestion-icon {
+			width: 7vw;
+		}
+		.ingredients-icon {
+			width: 7vw;
+		}
+		.world-icon {
+			width: 7vw;
+		}
+		.panic-fridge-icon {
+			width: 7vw;
+		}
+
+	}
+	
+}
+
+@media (min-width:760px) and (max-width:992px){
+	.footer{
+	.suggestion-icon {
+			width: 5vw;
+		}
+		.ingredients-icon {
+			width: 5vw;
+		}
+		.world-icon {
+			width: 5vw;
+		}
+		.panic-fridge-icon {
+			width: 5vw;
+		}
+
+	}
+	
+}
 
 
