@@ -1,8 +1,8 @@
 .FinalRecipe {
 
     background-image: url("https://s5.gifyu.com/images/Recipe-of-the-day-background.png");
-    padding-right: 200px; 
-    padding-left: 200px;
+    padding-right: 8vw; 
+    padding-left: 8vw;
 
     .picture {
         width: 100%;
@@ -79,6 +79,7 @@
         display: flex;
         text-align: left;
         margin: 15px auto;
+        background-color: rgba(238, 145, 129, 0.3);
         z-index: 1;
 
     }
@@ -96,7 +97,8 @@
     .servings {
         height: 60%;
         display: flex;
-        align-items: center;    border-radius: 10px;
+        align-items: center;    
+        border-radius: 10px;
         text-align: left;
     }
     
