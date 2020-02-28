@@ -85,6 +85,12 @@
     border-radius: 18px;
 }
 
+input{
+    &:focus{
+        outline: none;
+    }
+}
+
 .another{
     font-size: 0.5 rem;
     font-family: Roboto;
