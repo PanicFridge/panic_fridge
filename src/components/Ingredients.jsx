@@ -3,6 +3,7 @@ import './Ingredients.scss';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import {Link} from "react-router-dom";
 import NavbarF from "./NavbarF";
+import NavbarFBottom from './NavbarFBottom';
 // import { disconnect } from 'cluster'; NO IDEA WHAT IS THIS, I HAD THE FEELING IT WAS TYPED by itself WHEN I INSTALLED STH FROM NPM? I commented it out because it was not working the website...
 const axios = require('axios').default;
 
@@ -61,7 +62,7 @@ export default class Ingredients extends Component {
                     <div className="another">Please select another ingredient</div>
         
                 }
-                
+                <NavbarFBottom />
             </div>
         )
     }
