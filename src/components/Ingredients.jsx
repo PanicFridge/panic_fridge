@@ -38,12 +38,11 @@ export default class Ingredients extends Component {
     printMeals = () => {
         return this.state.results.map((meal) => {
             return (    
-                        
                             <div className="card-meal-ingredients" id = { meal.idMeal }>
                                 <div className="title-box-ingredients">
                                     <h2 className="title-meal-ingredients">{ meal.strMeal }</h2>
                                 </div>
-                                <Link to="/ingredients/ingredients-recipe"><img className="image-recipe-ingredients" src={ meal.strMealThumb } alt={ meal.strMeal }/></Link>
+                                <Link to={"/ingredients/" + meal.idMeal}><img className="image-recipe-ingredients" src={ meal.strMealThumb } alt={ meal.strMeal }/></Link> 
                             </div>
                         
                              

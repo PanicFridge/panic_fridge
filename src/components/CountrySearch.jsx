@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { Link } from "react-router-dom";
 import './CountrySearch.scss';
 import NavbarF from "./NavbarF";
@@ -14,7 +14,8 @@ export default class Countries extends Component {
         super(props)
         this.state = { 
             input: '',
-            results: []
+            results: [],
+            worldMap: ''
         }
     }
     
@@ -55,15 +56,37 @@ export default class Countries extends Component {
         return (
             
                 <div className="CountrySearch">
-                    <input className="input-searchbar-countries"type="text" placeholder="Type an international cuisine from the list..." onChange = { this.getResults }/>
+                    <input className="input-searchbar-countries" type="text" placeholder="Type an international cuisine from the list..." onChange = { this.getResults }/>
+                    {/* <div className="countries-list-map">
+                        <img className="world-map" src="https://s5.gifyu.com/images/world-map-01.png" alt="worldmap"/>
+                    </div> */}
                     <Link to="/"><NavbarF /></Link>
                     {this.state.results !== null ?
                         <div className="meals-grid">{ this.printMeals() }</div> :
                         <div clasName="another">Sorry, please select another country</div>
                     } 
                     <NavbarFBottom />
+                    
                 </div>
             
         )
     }
+
+        worldMap = ({
+        getInitialState: function() {
+          return { showWorldMap: false };
+        },
+        onChange: function() {
+            this.setState({ showWorldMap: true });
+        },
+        render: function() {
+        return(
+          <div className="countries-list-map" style={{display: this.state.showWorldMap ? 'none' : 'block'} }>
+              </div>
+          );
+        }
+      });
+   
+
+
 }

@@ -81,9 +81,9 @@
     text-align: center;
     align-self: center;
     justify-content: center;
-    background-color: rgba(248, 153, 29, 0.7);
     border: none;
-    border-radius: 18px;
+	border-radius: 18px;
+	background-color: rgba(248, 153, 29, 0.7);
 }
 
 input{
@@ -91,7 +91,11 @@ input{
         outline: none;
     }
 }
-
+.world-map{
+	width: 70%;
+	align-self: center;
+	justify-self: center;
+}
 .another{
     font-size: 0.5 rem;
     font-family: Roboto;
