@@ -1,80 +1,85 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './FinalRecipe.scss';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Routes from './Routes';
 import NavbarF from "./NavbarF";
 import {Link} from "react-router-dom";
 import NavbarFBottom from './NavbarFBottom';
 
-class FinalRecipe extends Component {
+class IngredientsFinalRecipe extends Component {
 
-    constructor(props){
-        super(props)
-        this.state = {
-
-        }
+    state = {
+        instructionsArray: '',
+        recipeTitle: '',
+        recipeImage: '',
+        recipeInstructions: '',
+        completInfo: false
     }
 
-    callingApiRandom (){
-        fetch("https://www.themealdb.com/api/json/v1/1/random.php", {
-          "method": "GET",
-          
+    componentDidMount(){
+        this.callingApiById()
+    }
+
+    callingApiById(){
+        fetch('https://www.themealdb.com/api/json/v1/1/lookup.php?i=' + this.props.match.params.idMeal, {"method": "GET",
         })
-        .then((response) => {
-          let responsedInfo = response.json()
-          return responsedInfo
+
+        .then((response)=>{
+            return response.json()
         })
+
         .then((dataApi)=>{
+            
+        let recipeTitleVar = dataApi.meals[0].strMeal;
+        let recipeImageVar = dataApi.meals[0].strMealThumb;
+        let recipiInstructionsVar = dataApi.meals[0].strInstructions;
+        let recipeCompletInforVar = dataApi.meals;
 
-    
-            let recipeTitleVar = dataApi.meals[0].strMeal;
-            let recipeImageVar = dataApi.meals[0].strMealThumb;
-            let recipiInstructionsVar = dataApi.meals[0].strInstructions;
-            let recipeCompletInforVar = dataApi.meals;
-    
-            // Función para separar las frases de las instrucciones
-            let recipeSentence = []
-            function instrSeparator(text) {
-              let sentenceArray = [];
-              sentenceArray = text.split('.');
-              recipeSentence = sentenceArray.filter((noEspaces)=>{
-                  return noEspaces !== '';
-              })
-            }
-            // Lammada a la función
-            instrSeparator(recipiInstructionsVar);
-    
-            // Cambio del estado
-            this.setState({
-              instructions: recipeSentence,
-              title: recipeTitleVar,
-              image: recipeImageVar,
-              recipeInstructions: recipiInstructionsVar,
-              info: recipeCompletInforVar
-            });
-    
-        })
-    
-        .catch (()=>{
-          return (
-            <div>
-              <h1>Upssss.... ERROR</h1>
-              <img src="https://gifyu.com/image/78Fv" alt="gif cocinando"/>
-            </div>
-          )
-        })
-      }
+        // Función para separar las frases de las instrucciones
+        let recipeSentence = []
+        function instrSeparator(text) {
+          let sentenceArray = [];
+          sentenceArray = text.split('.');
+          recipeSentence = sentenceArray.filter((noEspaces)=>{
+              return noEspaces !== '';
+          })
+        }
+        // Lammada a la función
+        instrSeparator(recipiInstructionsVar);
 
+        // Cambio del estado
+        this.setState({
+          instructionsArray: recipeSentence,
+          recipeTitle: recipeTitleVar,
+          recipeImage: recipeImageVar,
+          recipeInstructions: recipiInstructionsVar,
+          completInfo: recipeCompletInforVar
+        });
+        
+    })
+    
+    .catch (()=>{
+        return (
+          <div>
+            <h1>Upssss.... ERROR</h1>
+            <img src="https://gifyu.com/image/78Fv" alt="gif cocinando"/>
+          </div>
+        )
+      })
+    }
+    
     showProcess() {
-        return this.state.instructions.map((sentence, index)=>{
+            return this.state.instructionsArray.map((sentence, index)=>{
             return <li key={index}>{sentence}</li>
         })
+        
     }
 
     showIngredients() {
         let objectKey =  [];
         let objectValue =  [];
-        for (let property in this.state.info[0]) {
-            objectValue.push(this.state.info[0][property])
+        for (let property in this.state.completInfo[0]) {
+            objectValue.push(this.state.completInfo[0][property])
             objectKey.push(property)
         }
         // console.log(objectKey,objectValue)
@@ -100,32 +105,30 @@ class FinalRecipe extends Component {
         for (let i = 0; i < ingredientsNoBlanks.length; i++) {
             ingredientsArray[i] = `${ingredientsNoBlanks[i]} - ${quantitiesNoBlanks[i]}`;
         }
-        // console.log(ingredientsArray)
+        console.log('selecciono ingredientes')
         return ingredientsArray.map((ingredient,index)=>{
             return <li key={index}>{ingredient}</li>
         })
     }
 
-    componentDidMount(){
-        this.callingApiRandom();
-    }
-    
+
+
     render(){
-        return (
+        return(
             <div className="container-fliuid FinalRecipe">
             {
-                this.state.image == undefined
+                this.state.completInfo === false
                 ? null
                 : (
                     
                         <div className="row">
                         <div className="col-12 picture">
                             <Link to="/"><NavbarF /></Link>
-                            <img src={this.state.image} alt="recipe" className="recipe_image" />
+                            <img src={this.state.recipeImage} alt="recipe" className="recipe_image" />
                             <div className="recipe_title_container">
                             </div>
                         <div className="title">
-                            <h2>{this.state.title}</h2>
+                            <h2>{this.state.recipeTitle}</h2>
                         </div>
                         
                     </div>
@@ -149,10 +152,9 @@ class FinalRecipe extends Component {
             }
             <NavbarFBottom />
             </div>
-
         )
     }
-
 }
 
-export default FinalRecipe;
+
+ export default IngredientsFinalRecipe;

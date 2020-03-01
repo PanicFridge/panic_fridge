@@ -42,7 +42,7 @@ export default class Ingredients extends Component {
                                 <div className="title-box-ingredients">
                                     <h2 className="title-meal-ingredients">{ meal.strMeal }</h2>
                                 </div>
-                                <Link to={"/ingredients/" + meal.idMeal}><img className="image-recipe-ingredients" src={ meal.strMealThumb } alt={ meal.strMeal }/></Link> 
+                                <Link to={"/ingredients/" + meal.idMeal}><img className="image-recipe-ingredients" src={ meal.strMealThumb } alt={ meal.strMeal }/></Link>
                             </div>
                         
                              
