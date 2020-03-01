@@ -4,6 +4,7 @@ import Routes from './Routes';
 import NavbarF from "./NavbarF";
 import {Link} from "react-router-dom";
 import NavbarFBottom from './NavbarFBottom';
+
 class FinalRecipe extends Component {
 
     constructor(props){
@@ -103,13 +104,12 @@ class FinalRecipe extends Component {
         return ingredientsArray.map((ingredient,index)=>{
             return <li key={index}>{ingredient}</li>
         })
-
-
     }
 
     componentDidMount(){
         this.callingApiRandom();
     }
+    
     render(){
         return (
             <div className="container-fliuid FinalRecipe">
