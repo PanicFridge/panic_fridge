@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 const NavBottom = () => {
     return (
-    <div className='App nav-fridge-bottom'>
+    <div className='nav-fridge-bottom'>
           <footer className= "footer">
             <div className="container">
               <span>
