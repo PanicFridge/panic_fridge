@@ -1,7 +1,6 @@
 import React from 'react'
 import Ingredients from './Ingredients'
 import WorldFinalRecipe from './WorldFinalRecipe';
-// import Home from './'
 import FinalRecipe from './FinalRecipe'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import Home from './Home';
@@ -13,7 +12,6 @@ const RoutesFinalRecipe = ()=>{
   return(
     <div>
         <Route path="/world-food/:idMeal" exact component={WorldFinalRecipe}/>
-      
     </div>
   )
 }
