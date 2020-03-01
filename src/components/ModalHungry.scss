@@ -138,3 +138,42 @@
         margin-top: -37px;
     }
 }
+
+//IPHONE 5
+@media (width:320px) and (height:568px){
+    #modal-button{
+        margin-top: -70px;
+    }
+    #modal-header{
+        margin-bottom: -18px;
+    }
+
+    #close-button{
+        font-size: 16px;
+        padding: 1px 10px 3px 10px;
+        margin-top: 0px;
+    }
+    .modal-content{
+        margin-top: -4px;
+        height:501px;
+    }
+    .modal-header{
+        padding-top: 0px;;
+    }
+    .modal-header p{
+        font-size: 22px;
+        padding: 0rem 1rem;
+        
+    }
+    .counter{
+        font-size:13px;
+        padding: 0px;
+    }
+    .modal-body{
+        height: 579px;
+    }
+    .modal-footer{
+        margin-top: -29px;
+    }
+    
+}
