@@ -107,8 +107,7 @@ a {
 } */
 
 .menu-item:hover {
-  background: #EEEEEE;
-  color: #3290B1;
+  opacity: 0.7;
 }
 
 .menu-item:nth-child(3) {
@@ -226,8 +225,16 @@ a {
   transform: translate3d(-0.25084px, -104.9997px, 0);
 }
 
+.red {
+  background-color: #e12e4b;
+  background-image: url(https://s5.gifyu.com/images/random-recipe-01.png);
+  background-size: cover;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
 .orange {
-  background-image: url(https://s4.gifyu.com/images/world-food-icon-stroke-03.png);
+  background-image: url(https://s5.gifyu.com/images/world-food-inverted-TEXT-03ede060ca68ea843e.png);
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
   background-size: cover;
@@ -235,8 +242,16 @@ a {
   
 }
 
+.yellow {
+  background-image:url(https://s5.gifyu.com/images/ingredients-green-TEXT-02-02.png);
+  background-size: cover;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background-color: #c2cd23;
+}
+
 .menu-item.yellow:hover{
-  background-color: #f9e54e;
+  background-color: #c2cd23;
 }
 
 .menu-item.orange:hover{
@@ -246,33 +261,6 @@ a {
 .menu-item.red:hover{
   background-color: #e12e4b ;
 }
-
-.red {
-  background-color: #e12e4b;
-  background-image: url(https://s4.gifyu.com/images/random-recipe-icon-01.png);
-  background-size: cover;
-  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-}
-
-.red:hover {
-  color: #e12e4b;
-  text-shadow: none;
-}
-
-.yellow {
-  background-image:url(https://s4.gifyu.com/images/ingredients-icon-stroke-02.png);
-  background-size: cover;
-  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-  background-color: #f9e54e;
-}
-
-.yellow:hover {
-  color: #FC913A;
-  text-shadow: none;
-}
-
 
 .credit {
   margin: 24px 20px 120px 0;

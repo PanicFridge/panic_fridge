@@ -31,21 +31,21 @@
 	min-height: unset;
 	width: unset;            
 	margin: unset;
+}
 
-    
-	.title-meal-ingredients {
-		display: flex;
-		font-size: 1.2rem;
-		line-height: 1.5em;
-		font-family: 'Raleway', ;
-		font-weight: bolder;
-		color: #2c2c2b;
-		margin: 0.5rem;
-		justify-content: center ;
-		text-transform: uppercase;
+.title-meal-ingredients {
+	display: flex;
+	font-size: 1rem;
+	line-height: 1.5em;
+	font-family: 'Raleway', ;
+	font-weight: bolder;
+	color: #2c2c2b;
+	// margin: 0.5rem;
+	justify-content: center ;
+	// text-transform: uppercase;
+	// margin-top: 7%;
 
-			
-	}
+		
 }
 
 .image-recipe-ingredients {
@@ -62,14 +62,18 @@
 	position: absolute;
 	width: 100%;
 	height: 25%;
-	background-color: rgba(255, 255, 255, 0.80);
-	align-self: flex-end;
+	background-color: rgba(255, 255, 255, 0.8);
+	// align-self: flex-end;
 	align-items: center;
 	border-radius: 0 0 0.5rem 0.5rem;
+	display: flex;
+	justify-content: center;
 }
+
+
 .input-searchbar-ingredients {
     margin: 2rem;
-    width: 450px;
+    width: 25rem;
     height: 1.8em;
     font-size: 0.5 rem;
     font-family: 'Roboto', ;
@@ -78,9 +82,14 @@
     align-self: center;
     justify-content: center;
     border: none;
-	border-radius: 18px;
+    border-radius: 18px;
 	background-color: #c2cd23a6;
-	
+}
+
+input{
+    &:focus{
+        outline: none;
+    }
 }
 input{
     &:focus{
@@ -114,4 +123,10 @@ input{
         width: 33.3%;
     }
 }
-
+@media only screen and (max-width:320px) { 
+    /* Smartphone view: 1 tile */
+	.input-searchbar-countries{
+		margin: 2rem;
+		width: 16rem;
+	}
+}

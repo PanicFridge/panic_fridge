@@ -8,12 +8,14 @@ import FinalRecipe from './FinalRecipe';
 import Fridge from './Fridge';
 import {Link} from "react-router-dom";
 import './Home.scss'
+import InfoModal from './InfoModal';
 
 const Home = () => {
 
     return (
         <div className='Home'>
             <Link to="/"><NavbarF /></Link>
+            <InfoModal />
             <Title />
             <Fridge />
             <ModalHungry />

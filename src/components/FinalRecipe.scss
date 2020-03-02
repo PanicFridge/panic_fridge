@@ -51,7 +51,7 @@
         font-family: 'Raleway', sans-serif;
 
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             padding-left: 30px;
             @media only screen and (max-width:321px) {
                 font-size: 1.3rem;
@@ -85,6 +85,7 @@
         margin: 20px 0 0 0;
         background-color: rgba(238, 145, 129, 0.3);
         z-index: 1;
+        
         @media only screen and (max-width:650px){
             height: 250px;
          }
@@ -92,6 +93,10 @@
             height: auto;
             padding-bottom: 10px;
          }
+
+         ol {
+            list-style-type: none;
+        }
 
     }
     
@@ -125,18 +130,17 @@
     .description {
         height: auto;
         width: 100%;
-        padding: 20px 15px 0 0px;
+        padding: 20px 0px 0 0px;
         text-align: justify;
         background-color: white;
         box-shadow: -1px -4px 51px -42px rgba(128,125,128,1);
         margin-top: 20px;
+
+        ul {
+            margin: 0 3rem 1rem 1rem;
+    
+        }
     }
     
-    ol {
-        list-style-type: none;
-    }
-    ul {
-        margin: 0 3rem 1rem 1rem;
-
-    }
+    
 }
