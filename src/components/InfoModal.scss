@@ -1,7 +1,9 @@
 .cont-modal{
+  display: flex;
+  justify-content: flex-end;
   position: fixed;
-  top: 0px;
-  right: 200px;
+  margin: 2vw 2vw 0 0;
+
 }
 
 .container-icon{
@@ -21,6 +23,11 @@
 .container-rrss1{
   width:100%;
 
+}
+.icon-contact {
+  cursor: pointer;
+  width: 3.5%;
+  height: 3.5%;
 }
 
 .linkedin-icon1{
