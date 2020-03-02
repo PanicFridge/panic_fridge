@@ -6,8 +6,44 @@
 
 .container-icon{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   img{
     padding-left: 10px;
   }
+}
+
+.container-mother{
+  height: 50px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.container-rrss1{
+  width:100%;
+
+}
+
+.linkedin-icon1{
+  margin-left:-16px;
+}
+.linkedin-icon2{
+  margin-left:-14px;
+}
+.linkedin-icon3{
+  margin-left:-16px;
+}
+.linkedin-icon4{
+  margin-left:-16px;
+}
+.github-icon1{
+  margin-left:-5px;
+}
+.github-icon2{
+  margin-left:21px;
+}
+.github-icon3{
+  margin-left:19px;
+}
+.github-icon4{
+  margin-left:23px;
 }
