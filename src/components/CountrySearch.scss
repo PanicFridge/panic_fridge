@@ -85,6 +85,7 @@
     border: none;
 	border-radius: 18px;
 	background-color: rgba(248, 153, 29, 0.7);
+	z-index: 100;
 }
 
 input{
@@ -132,4 +133,8 @@ input{
 	}
 }
 
-
+@media (min-width:320px) and (max-width:991px){
+	html{
+		padding-bottom: 45px;
+	}
+}

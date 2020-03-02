@@ -73,7 +73,7 @@
 
 .input-searchbar-ingredients {
     margin: 2rem;
-    width: 25rem;
+    width: 16rem;
     height: 1.8em;
     font-size: 0.5 rem;
     font-family: 'Roboto', ;
@@ -84,6 +84,7 @@
     border: none;
     border-radius: 18px;
 	background-color: #c2cd23a6;
+	z-index: 100;
 }
 
 input{
