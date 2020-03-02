@@ -28,27 +28,27 @@ class InfoModal extends Component {
           </ModalHeader>
           <ModalBody>
           <div className="container-icon">
-            <img src="https://vignette.wikia.nocookie.net/a-bizarre-day-roblox/images/2/29/Insert-image-here.jpg/revision/latest?cb=20190907145715" alt="insert" width="100" height="100" />
-            <img src="https://vignette.wikia.nocookie.net/a-bizarre-day-roblox/images/2/29/Insert-image-here.jpg/revision/latest?cb=20190907145715" alt="insert" width="100" height="100" />
-            <img src="https://vignette.wikia.nocookie.net/a-bizarre-day-roblox/images/2/29/Insert-image-here.jpg/revision/latest?cb=20190907145715" alt="insert" width="100" height="100" />
-            <img src="https://vignette.wikia.nocookie.net/a-bizarre-day-roblox/images/2/29/Insert-image-here.jpg/revision/latest?cb=20190907145715" alt="insert" width="100" height="100" />
+            <img  src="https://s5.gifyu.com/images/cat36b02dbb58a70018.png" alt="insert" width="100" height="90" />
+            <img src="https://s5.gifyu.com/images/javi.png" alt="insert" width="100" height="90" />
+            <img src="https://s5.gifyu.com/images/Jara.png" alt="insert" width="100" height="90" />
+            <img src="https://s5.gifyu.com/images/Escu.png" alt="insert" width="100" height="90" />
           </div>
           <div className="container-mother">
             <div className="container-rrss1">
-              <a href="https://github.com/ccnn1010"><img className="github-icon1" src="https://s5.gifyu.com/images/github.jpg" alt="github-icon" width="66" height="45" /></a>
+              <a href="https://github.com/ccnn1010"><img className="github-icon1" src="https://s5.gifyu.com/images/github.jpg" alt="github-icon" width="66" height="40" /></a>
               <a href="https://www.linkedin.com/in/caterinanicolo/"><img className="linkedin-icon1" src="https://s5.gifyu.com/images/linkedin80f6790467704d21.png" alt="linkedin-icon" width="50" height="45" /></a>
 
             
-              <a href="https://github.com/jciria74"><img className="github-icon2" src="https://s5.gifyu.com/images/github.jpg" alt="github-icon" width="66" height="45" /></a>
+              <a href="https://github.com/jciria74"><img className="github-icon2" src="https://s5.gifyu.com/images/github.jpg" alt="github-icon" width="66" height="40" /></a>
               <a href="https://www.linkedin.com/in/javierciria74/"><img className="linkedin-icon2" src="https://s5.gifyu.com/images/linkedin80f6790467704d21.png" alt="linkedin-icon" width="50" height="45" /></a>
            
           
             
-              <a href="https://github.com/jara-git"><img className="github-icon3" src="https://s5.gifyu.com/images/github.jpg" alt="github-icon" width="66" height="45" /></a>
+              <a href="https://github.com/jara-git"><img className="github-icon3" src="https://s5.gifyu.com/images/github.jpg" alt="github-icon" width="66" height="40" /></a>
               <a href="https://www.linkedin.com/in/jarabelmonte/"><img className="linkedin-icon3" src="https://s5.gifyu.com/images/linkedin80f6790467704d21.png" alt="linkedin-icon" width="50" height="45" /></a>
          
     
-              <a href="https://github.com/Javiuty"><img className="github-icon4" src="https://s5.gifyu.com/images/github.jpg" alt="github-icon" width="66" height="45" /></a>
+              <a href="https://github.com/Javiuty"><img className="github-icon4" src="https://s5.gifyu.com/images/github.jpg" alt="github-icon" width="66" height="40" /></a>
               <a href="https://www.linkedin.com/in/javierescuadra/"><img className="linkedin-icon4" src="https://s5.gifyu.com/images/linkedin80f6790467704d21.png" alt="linkedin-icon" width="50" height="45" /></a>
             </div>
           </div>
