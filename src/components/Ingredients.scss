@@ -1,23 +1,9 @@
-// .App {
-// 	text-align: center;
-// }
-
-// .App-header {
-// 	background-color: #282c34;
-// 	min-height: 100vh;
-// 	display: flex;
-// 	flex-direction: column;
-// 	align-items: center;
-// 	justify-content: center;
-// 	font-size: calc(10px + 2vmin);
-// 	color: white;
-// }
-
-
 .Ingredients {
 	background-image: url("https://s5.gifyu.com/images/Ingredients-search--background.png ");
 	min-height: 100vh;
 	margin: 0 2rem;
+	display: flex;
+	flex-direction: column;
 	
 }
 
@@ -97,9 +83,18 @@
     justify-content: center;
     border: none;
     border-radius: 18px;
+<<<<<<< HEAD
 	background-color:#C2CD23;
+=======
+	background-color: #c2cd23a6;
+>>>>>>> 5e85e689e9b89195bbacd55db946d4e78c7aa98b
 }
 
+input{
+    &:focus{
+        outline: none;
+    }
+}
 input{
     &:focus{
         outline: none;
