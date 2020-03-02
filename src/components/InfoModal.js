@@ -19,7 +19,7 @@ class InfoModal extends Component {
     return (
       <div>
         <div className="cont-modal">
-          <Button id="modal-button" onClick={this.toggleModal.bind(this)}><img src="https://freesvg.org/img/abstract-user-flat-4.png" alt="icon-contact" width="23" height="23"/> Contact us!</Button>
+          <img className="icon-contact" onClick={this.toggleModal.bind(this)} src="https://s5.gifyu.com/images/contact-us-icon-04.png" alt="icon-contact" width="23" height="23" />
         </div>
         <Modal isOpen={this.state.modalState} toggle={this.toggleModal.bind(this)}>
       
