@@ -78,17 +78,32 @@
         margin-bottom: 10px;
     } 
 
-//Hungry? modal button
-    #modal-button{
+//Hungry? modal button with animation
+.wrapperButton{ 
+  padding: 20px;     
+} 
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(215, 222, 112, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(215, 222, 112, 0.3);
+  }
+}
+
+#modal-button{
         background-color: #5bbcca;
         border-color: #5bbcca;
         box-shadow: none;
+        animation: shadow-pulse 1.2s infinite;
     }
 
-    #modal-button:hover {
+ #modal-button:hover {
         background-color:  #C2CD23;
         border-color: #C2CD23;
-      }
+      } 
 //This changes the transparent background color from the default grey to yellow
      .modal-backdrop.show {
         background-color: #C2CD23;

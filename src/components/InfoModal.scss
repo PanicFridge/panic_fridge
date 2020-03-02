@@ -6,6 +6,27 @@
 
 }
 
+.icon-contact {
+  cursor: pointer;
+  width: 3.5%;
+  height: 3.5%; 
+  -webkit-transition: width 1s, height 1s;
+  transition: width 1s, height 1s;   
+  &:hover {
+    width: 6%;
+    height: 6%;
+  }
+  @media only screen and (max-width:770px) { 
+    /* Smartphone */
+        // width: 10%;
+        // height: 10%
+        display: none;
+    }
+  
+
+
+}
+
 .container-icon{
   display: flex;
   justify-content: space-between;
@@ -24,11 +45,7 @@
   width:100%;
 
 }
-.icon-contact {
-  cursor: pointer;
-  width: 3.5%;
-  height: 3.5%;
-}
+
 
 .linkedin-icon1{
   margin-left:-16px;
