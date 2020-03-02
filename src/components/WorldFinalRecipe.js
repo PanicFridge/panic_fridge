@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './FinalRecipe.scss';
+import './WorldFinalRecipe.scss';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Routes from './Routes';
 import NavbarF from "./NavbarF";
@@ -115,7 +115,7 @@ class WorldFinalRecipe extends Component {
 
     render(){
         return(
-            <div className="container-fliuid FinalRecipe">
+            <div className="container-fliuid WorldFinalRecipe">
             {
                 this.state.completInfo === false
                 ? null
