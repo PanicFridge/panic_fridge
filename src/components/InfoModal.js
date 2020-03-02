@@ -28,10 +28,10 @@ class InfoModal extends Component {
           </ModalHeader>
           <ModalBody>
           <div className="container-icon">
-            <img src="https://vignette.wikia.nocookie.net/a-bizarre-day-roblox/images/2/29/Insert-image-here.jpg/revision/latest?cb=20190907145715" alt="insert" width="100" height="100" />
-            <img src="https://vignette.wikia.nocookie.net/a-bizarre-day-roblox/images/2/29/Insert-image-here.jpg/revision/latest?cb=20190907145715" alt="insert" width="100" height="100" />
-            <img src="https://vignette.wikia.nocookie.net/a-bizarre-day-roblox/images/2/29/Insert-image-here.jpg/revision/latest?cb=20190907145715" alt="insert" width="100" height="100" />
-            <img src="https://vignette.wikia.nocookie.net/a-bizarre-day-roblox/images/2/29/Insert-image-here.jpg/revision/latest?cb=20190907145715" alt="insert" width="100" height="100" />
+            <img  src="https://s5.gifyu.com/images/caterina-icon.png" alt="insert" width="100" height="100" />
+            <img src="https://s5.gifyu.com/images/javi-icon.png" alt="insert" width="100" height="100" />
+            <img src="https://s5.gifyu.com/images/jara-icon.png" alt="insert" width="100" height="100" />
+            <img src="https://s5.gifyu.com/images/escu-icon.png" alt="insert" width="100" height="100" />
           </div>
           <div className="container-mother">
             <div className="container-rrss1">
