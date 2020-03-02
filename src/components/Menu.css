@@ -102,12 +102,14 @@ a {
 }
 
 
-/* .menu-item {
-  transition: all 0.1s ease 0s;
-} */
+.menu-item {
+  -webkit-transition: width 1s, height 1s;
+  transition: width 1s, height 1s;
+} 
 
 .menu-item:hover {
-  opacity: 0.7;
+  width: 122%;
+  height: 122%;
 }
 
 .menu-item:nth-child(3) {
