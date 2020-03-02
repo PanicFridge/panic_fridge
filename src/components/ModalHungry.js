@@ -22,7 +22,9 @@ class ModalHungry extends Component {
     return (
       <div>
         <div className="container-modal">
+        <div className="wrapperButton">
           <Button id="modal-button" onClick={this.toggleModal.bind(this)}>Hungry?</Button>
+        </div>
         </div>
         <Modal isOpen={this.state.modalState} toggle={this.toggleModal.bind(this)}>
       
