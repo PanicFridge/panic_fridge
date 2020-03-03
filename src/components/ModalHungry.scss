@@ -8,7 +8,6 @@
      text-transform: uppercase;
      border-radius: 12px;
      margin-top: -10px;
-
     }    
 
     #close-button{
@@ -70,12 +69,13 @@
         padding: none;
         margin-right: 5%;
         margin-left: 5%;
+        margin-top: -4%;
     } 
 //This change takes line out of modal
     #modal-footer{
         border-top: none;
         justify-content: center;
-        margin-bottom: 10px;
+     /*    margin-bottom: 10px; */
     } 
 
 //Hungry? modal button with animation
@@ -143,19 +143,35 @@
     }
 }
 
-
+//IPHONE 6/7/8
 @media (min-width:350px) and (max-width:600px){
     .modal-content{
         margin-top: -6px;
-        height: 665px;
+        height: 600px;   
     }
     #close-button{
         margin-top: -37px;
+    }
+
+    #modal-footer{
+        margin-bottom: 5px;
+    }
+
+    #modal-button{
+        margin-top: -35px;
+    }
+    .modal-header p{
+        padding-top: 5px;
     }
 }
 
 //IPHONE 5
 @media (width:320px) and (height:568px){
+    .btn.btn-secondary{
+        font-size: 1rem;
+        margin-bottom: 4px;
+       }    
+    
     #modal-button{
         margin-top: -70px;
     }

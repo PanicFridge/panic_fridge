@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from './Title';
 import ModalHungry from './ModalHungry';
-import NavbarF from './NavbarF';
+// import NavbarF from './NavbarF';
 import {Button,Modal,Container,Card,Navbar} from 'reactstrap';
 import NavbarFBottom from './NavbarFBottom';
 import FinalRecipe from './FinalRecipe';
@@ -14,7 +14,7 @@ const Home = () => {
 
     return (
         <div className='Home'>
-            <Link to="/"><NavbarF /></Link>
+            {/* <Link to="/"><NavbarF /></Link> */}
             <InfoModal />
             <Title />
             <Fridge />
