@@ -19,7 +19,14 @@ class InfoModal extends Component {
     return (
       <div>
         <div className="cont-modal">
+          <ul className= "items-list-icons">
+          <li>
           <img className="icon-contact" onClick={this.toggleModal.bind(this)} src="https://s5.gifyu.com/images/contact-us-icon-04.png" alt="icon-contact" width="23" height="23" />
+          </li>
+          <li className= 'fridge-logo'>
+          </li>
+          </ul>
+          
         </div>
         <Modal isOpen={this.state.modalState} toggle={this.toggleModal.bind(this)}>
       

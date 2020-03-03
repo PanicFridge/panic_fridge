@@ -10,12 +10,30 @@
 	justify-content: flex-end;
 }
 .fridge-logo {
-	height: 60px;
-	width: 40px;
-	background-image: url('https://s5.gifyu.com/images/fridge-stroke-turquoise-01-01.png');
+	background-image: url('https://s5.gifyu.com/images/fridge-icon-circle-stroke-06.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+	position: fixed;
+	top: 20px;
+	left: 45px;
+	cursor: pointer;
+	width: 8%;
+	height: 8%; 
+	-webkit-transition: width 1s, height 1s;
+	transition: width 1s, height 1s;
+	z-index:1;
+
+	&:hover {
+		  width: 10%;
+		  height: 10%;
+	}
+
+	@media only screen and (max-width:770px) { 
+		  /* Smartphone */
+			   width: 10%;
+			   height: 10%
+	}
 }
 .navbar-nav {
 	.nav-link.active {
@@ -151,13 +169,3 @@
 	}
 	
 }
-
-
-// #icon-contact-us {
-// 	height: 40px;
-// 	width: 40px;
-// 	background-image: url('https://s5.gifyu.com/images/contact-us-icon-04.png');
-// 	background-size: contain;
-// 	background-repeat: no-repeat;
-// 	background-position: center;
-// }
