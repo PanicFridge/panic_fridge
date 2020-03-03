@@ -6,7 +6,7 @@ const Nav = () => {
       return (
 
       <div className='App nav-fridge'>
-          <div className= 'fridge-logo'></div>
+          <div className= 'fridge-log'></div>
       </div>
 )
 }

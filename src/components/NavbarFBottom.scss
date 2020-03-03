@@ -9,32 +9,32 @@
 	flex-basis: auto;
 	justify-content: flex-end;
 }
-.fridge-logo {
-	background-image: url('https://s5.gifyu.com/images/fridge-icon-circle-stroke-06.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	position: fixed;
-	top: 20px;
-	left: 45px;
-	cursor: pointer;
-	width: 8%;
-	height: 8%; 
-	-webkit-transition: width 1s, height 1s;
-	transition: width 1s, height 1s;
-	z-index:1;
+// .fridge-logo {
+// 	background-image: url('https://s5.gifyu.com/images/fridge-icon-circle-stroke-06.png');
+// 	background-size: contain;
+// 	background-repeat: no-repeat;
+// 	background-position: center;
+// 	position: fixed;
+// 	top: 20px;
+// 	left: 45px;
+// 	cursor: pointer;
+// 	width: 8%;
+// 	height: 8%; 
+// 	-webkit-transition: width 1s, height 1s;
+// 	transition: width 1s, height 1s;
+// 	z-index:1;
 
-	&:hover {
-		  width: 10%;
-		  height: 10%;
-	}
+// 	&:hover {
+// 		  width: 10%;
+// 		  height: 10%;
+// 	}
 
-	@media only screen and (max-width:770px) { 
-		  /* Smartphone */
-			   width: 10%;
-			   height: 10%
-	}
-}
+// 	@media only screen and (max-width:770px) { 
+// 		  /* Smartphone */
+// 			   width: 10%;
+// 			   height: 10%
+// 	}
+// }
 .navbar-nav {
 	.nav-link.active {
 		color: #5bbcca;
@@ -111,9 +111,7 @@
 	}
 
 @media (max-width: 503px){
-	// .navbar-footer{
-	// 	margin-left:-23px;
-	// }
+
 	.footer{
 	.suggestion-icon {
 			width: 11vw;

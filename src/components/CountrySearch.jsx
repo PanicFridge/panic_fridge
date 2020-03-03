@@ -59,12 +59,12 @@ export default class Countries extends Component {
                 <input className="input-searchbar-countries" type="text" placeholder="Type an international cuisine from the list..." onChange = { this.getResults }/>
                 {this.state.results ? "" :
                     <div className="countries-list-map">
-                        <img className="world-map" src="https://s5.gifyu.com/images/world-map-01.png" alt="worldmap"/>
+                        <img className="world-map" src="https://s5.gifyu.com/images/worldmap-list2-01.png" alt="worldmap"/>
                     </div>}
                 <Link to="/"><NavbarF /></Link>
                 {this.state.results !== null ?
                     <div className="meals-grid">{ this.printMeals() }</div> :
-                    <div clasName="another">Sorry, please select another country</div>
+                    <div clasName="another"></div>
                 } 
                 <NavbarFBottom />
                 

@@ -21,12 +21,14 @@ class InfoModal extends Component {
         <div className="cont-modal">
           <ul className= "items-list-icons">
           <li>
-          <img className="icon-contact" onClick={this.toggleModal.bind(this)} src="https://s5.gifyu.com/images/contact-us-icon-04.png" alt="icon-contact" width="23" height="23" />
+            <img className='fridge-logo' src='https://s5.gifyu.com/images/fridge-icon-circle-stroke-06.png' alt='fridge-icon'>
+              
+            </img>
           </li>
-          <li className= 'fridge-logo'>
+          <li>
+          <img className="icon-contact" onClick={this.toggleModal.bind(this)} src="https://s5.gifyu.com/images/contact-us-icon-04.png" alt="icon-contact"/>
           </li>
           </ul>
-          
         </div>
         <Modal isOpen={this.state.modalState} toggle={this.toggleModal.bind(this)}>
       
