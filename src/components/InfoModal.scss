@@ -112,6 +112,7 @@
       font-size: 10px;;
     }
   }
+  
   h5{
     margin-bottom: -28px;
     @media only screen and (max-width:350px) {
@@ -119,22 +120,7 @@
       font-size: 1rem;
     }
   }
-  @media (max-width:456px){
-    p{
-      font-size: 12px;
-    }
-    h5{
-      font-size: 0.9rem;
-    }
-  }
-  @media (max-width:455px){
-    margin-bottom: 55px;
-    
-  }
-
 }
-
-
 
 .icons{
   display: flex;
