@@ -88,7 +88,7 @@ class Fridge extends Component {
       // materials
     
       var fridgeMat = new THREE.MeshToonMaterial({
-        color: 0x5bbdc8,
+        color: 0xffffff,
         shininess: 2,
         specular: 0xcccccc
       });
