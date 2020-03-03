@@ -1,29 +1,63 @@
 .cont-modal{
   display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  margin: 2vw 2vw 0 0;
+  text-align: left;
+  position: absolute;
 
 }
+.items-list-icons {
+  list-style: none;
+  
+}
+
+.fridge-logo {
+	top: 20px;
+	left: 45px;
+	cursor: pointer;
+	width: 70px;
+	height: auto;
+	-webkit-transition: width 1s, height 1s;
+  transition: width 1s, height 1s;
+  margin: 20px 50px 2px 1px;
+
+	&:hover {
+		  width: 90px;
+		  height: auto;
+	}
+
+	@media only screen and (max-width:770px) { 
+		  /* Smartphone */
+			   width: 10%;
+			   height: auto;
+	}
+	@media (max-width: 991px){
+		
+			display:none;
+		}
+}	
 
 .icon-contact {
   cursor: pointer;
-  width: 4%;
-  height: 4%; 
+  width: 70px;
+  height: auto; 
+  margin-top: 30px;
   -webkit-transition: width 1s, height 1s;
   transition: width 1s, height 1s;   
   &:hover {
-    width: 10%;
-    height: 10%;
+    width: 90px;
+    height: auto;
   }
   @media only screen and (max-width:770px) { 
     /* Smartphone */
-        // width: 10%;
-        // height: 10%
-        display: none;
+        width: 40px;
+        height: auto;
+        margin-top: 560px;
+        margin-left: 3px;    
     }
-  
-
+    @media only screen and (min-width:770px) { 
+		  /* tablet */
+			   width: 60px;
+			   height: auto;
+	}
 
 }
 
@@ -76,34 +110,3 @@
 }
 
 
-
-.fridge-logo {
-	background-image: url('https://s5.gifyu.com/images/fridge-icon-circle-stroke-06.png');
-	position: fixed;
-	top: 20px;
-	left: 45px;
-	cursor: pointer;
-	width: 6%;
-	height: 6%; 
-	-webkit-transition: width 1s, height 1s;
-	transition: width 1s, height 1s;
-
-	&:hover {
-		  width: 12%;
-		  height: 12%;
-	}
-
-	@media only screen and (max-width:770px) { 
-		  /* Smartphone */
-			   width: 10%;
-			   height: 10%;
-	}
-	@media (max-width: 991px){
-		
-			display:none;
-		}
-}	
-
-.items-list-icons {
-  list-style: none;
-}
