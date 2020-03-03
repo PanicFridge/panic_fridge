@@ -1,31 +1,65 @@
 .cont-modal{
   display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  margin: 2vw 2vw 0 0;
+  text-align: left;
+  position: absolute;
 
 }
-
-.icon-contact {
-  cursor: pointer;
-  width: 4%;
-  height: 4%; 
-  -webkit-transition: width 1s, height 1s;
-  transition: width 1s, height 1s;   
-  &:hover {
-    width: 10%;
-    height: 10%;
-  }
-  @media only screen and (max-width:770px) { 
-    /* Smartphone */
-        // width: 10%;
-        // height: 10%
-        display: none;
-    }
+.items-list-icons {
+  list-style: none;
   
 }
 
+.fridge-logo {
+	top: 20px;
+	left: 45px;
+	cursor: pointer;
+	width: 70px;
+	height: auto;
+	-webkit-transition: width 1s, height 1s;
+  transition: width 1s, height 1s;
+  margin: 20px 50px 2px 1px;
 
+	&:hover {
+		  width: 90px;
+		  height: auto;
+	}
+
+	@media only screen and (max-width:770px) { 
+		  /* Smartphone */
+			   width: 10%;
+			   height: auto;
+	}
+	@media (max-width: 991px){
+		
+			display:none;
+		}
+}	
+
+.icon-contact {
+  cursor: pointer;
+  width: 70px;
+  height: auto; 
+  margin-top: 30px;
+  -webkit-transition: width 1s, height 1s;
+  transition: width 1s, height 1s;   
+  &:hover {
+    width: 90px;
+    height: auto;
+  }
+  @media only screen and (max-width:770px) { 
+    /* Smartphone */
+        width: 40px;
+        height: auto;
+        margin-top: 560px;
+        margin-left: 3px;    
+    }
+    @media only screen and (min-width:770px) { 
+		  /* tablet */
+			   width: 60px;
+			   height: auto;
+	}
+  
+}
 
 .modal-body{
   position: relative;
@@ -109,6 +143,7 @@
   width:100%;
 
 }
+<<<<<<< HEAD
 
 
 .linkedin-icon1{
@@ -171,3 +206,5 @@
 .items-list-icons {
   list-style: none;
 }
+=======
+>>>>>>> 816a76fa506455c8de350f5522625d6a2727dacb
