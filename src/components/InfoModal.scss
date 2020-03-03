@@ -23,7 +23,71 @@
         display: none;
     }
   
+}
 
+
+
+.modal-body{
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: -32px;
+  img{
+    padding-top: 10px;
+  }
+}
+
+
+
+.faces-icons {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+    img{
+      height: auto;
+      width: 7vw;
+      margin-top:10px;
+  }
+  
+}
+
+.text-name{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 22px;
+
+  img{
+    height: auto;
+    width: 3vw;
+  }
+  p{
+    color:gray;
+    font-weight:bold ;
+    margin-top: 10px;
+  }
+  h5{
+    margin-bottom: -28px;
+  }
+}
+
+
+
+.icons{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 130px;
+  img{
+    height: auto;
+    width: 4vw;
+  }
+}
+
+.github-icon{
 
 }
 
@@ -46,31 +110,3 @@
 
 }
 
-
-.linkedin-icon1{
-  margin-left:-16px;
-}
-.linkedin-icon2{
-  margin-left:-14px;
-}
-.linkedin-icon3{
-  margin-left:-16px;
-}
-.linkedin-icon4{
-  margin-left:-16px;
-}
-.github-icon1{
-  margin-left:-5px;
-}
-.github-icon2{
-  margin-left:21px;
-}
-.github-icon3{
-  margin-left:19px;
-}
-.github-icon4{
-  margin-left:23px;
-}
-.in-circle{
-  border-radius: 60%;
-}
