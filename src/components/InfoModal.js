@@ -57,19 +57,19 @@ class InfoModal extends Component {
 
             <div className="icons">
               <div>
-                <a href="https://github.com/ccnn1010" target="_blank" rel="noopener noreferrer"><img className="github-icon"src="https://s5.gifyu.com/images/github.jpg" alt="github-icon"/></a>
+                <a href="https://github.com/ccnn1010" target="_blank" rel="noopener noreferrer"><img className="github-icon"src="https://s5.gifyu.com/images/new_github.png" alt="github-icon"/></a>
                 <a href="https://www.linkedin.com/in/caterinanicolo/" target="_blank" rel="noopener noreferrer"><img className="linkedin-icon" src="https://s5.gifyu.com/images/linkedin80f6790467704d21.png" alt="linkedin-icon"/></a>
               </div>
               <div>
-                <a href="https://github.com/jciria74" target="_blank" rel="noopener noreferrer"><img className="github-icon" src="https://s5.gifyu.com/images/github.jpg" alt="github-icon" /></a>
+                <a href="https://github.com/jciria74" target="_blank" rel="noopener noreferrer"><img className="github-icon" src="https://s5.gifyu.com/images/new_github.png" alt="github-icon" /></a>
                 <a href="https://www.linkedin.com/in/javierciria74/" target="_blank" rel="noopener noreferrer"><img className="linkedin-icon" src="https://s5.gifyu.com/images/linkedin80f6790467704d21.png" alt="linkedin-icon"/></a>
               </div>
               <div>
-                <a href="https://github.com/jara-git" target="_blank" rel="noopener noreferrer"><img className="github-icon"  src="https://s5.gifyu.com/images/github.jpg" alt="github-icon" /></a>
+                <a href="https://github.com/jara-git" target="_blank" rel="noopener noreferrer"><img className="github-icon"  src="https://s5.gifyu.com/images/new_github.png" alt="github-icon" /></a>
                 <a href="https://www.linkedin.com/in/jarabelmonte/" target="_blank" rel="noopener noreferrer"><img className="linkedin-icon" src="https://s5.gifyu.com/images/linkedin80f6790467704d21.png" alt="linkedin-icon"/></a>
               </div>
               <div>
-                <a href="https://github.com/Javiuty" target="_blank" rel="noopener noreferrer"><img className="github-icon" src="https://s5.gifyu.com/images/github.jpg" alt="github-icon" /></a>
+                <a href="https://github.com/Javiuty" target="_blank" rel="noopener noreferrer"><img className="github-icon" src="https://s5.gifyu.com/images/new_github.png" alt="github-icon" /></a>
                 <a href="https://www.linkedin.com/in/javierescuadra/" target="_blank" rel="noopener noreferrer"><img className="linkedin-icon" src="https://s5.gifyu.com/images/linkedin80f6790467704d21.png" alt="linkedin-icon"/></a>
               </div>
               

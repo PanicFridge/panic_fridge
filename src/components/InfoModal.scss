@@ -46,12 +46,12 @@
     width: 90px;
     height: auto;
   }
-  @media only screen and (max-width:770px) { 
+  @media only screen and (max-width:990px) { 
     /* Smartphone */
         width: 40px;
         height: auto;
-        margin-top: 560px;
-        margin-left: 3px;    
+         margin-top: 17px;
+        margin-left: -20px;    
     }
     @media only screen and (min-width:770px) { 
 		  /* tablet */
@@ -83,7 +83,20 @@
       height: auto;
       width: 7vw;
       margin-top:10px;
+
+    @media (max-width: 601px){
+      height: auto;
+      width: 90px;
+    }
+    @media (max-width:456px){
+      height: auto;
+      width: 70px;
+    }
+    @media (max-width:349px){
+      
+    }
   }
+  
   
 }
 
@@ -93,11 +106,6 @@
   flex-direction: column;
   justify-content: space-around;
   margin-top: 22px;
-
-  img{
-    height: auto;
-    width: 3vw;
-  }
   p{
     color:gray;
     font-weight:bold ;
@@ -106,6 +114,19 @@
   h5{
     margin-bottom: -28px;
   }
+  @media (max-width:456px){
+    p{
+      font-size: 12px;
+    }
+    h5{
+      font-size: 0.9rem;
+    }
+  }
+  @media (max-width:455px){
+    margin-bottom: 55px;
+    
+  }
+
 }
 
 
@@ -115,10 +136,13 @@
   flex-direction: column;
   justify-content: space-around;
   width: 130px;
+  @media (max-width:455px){
+    margin-bottom: 55px;
+  }
 }
 
 .github-icon{
-  height:47px;
+  height:40px;
   width:auto;
 }
 
