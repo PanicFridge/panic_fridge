@@ -2,11 +2,10 @@
   display: flex;
   text-align: left;
   position: absolute;
-
 }
+
 .items-list-icons {
   list-style: none;
-  
 }
 
 .fridge-logo {
@@ -29,9 +28,9 @@
 			   width: 10%;
 			   height: auto;
 	}
-	@media (max-width: 991px){
+	@media only screen and (max-width: 991px){
 		
-			display:none;
+			display: none;
 		}
 }	
 
@@ -50,8 +49,8 @@
     /* Smartphone */
         width: 40px;
         height: auto;
-        margin-top: 560px;
-        margin-left: 3px;    
+        margin-top: 20px;
+        margin-left: -20px;    
     }
     @media only screen and (min-width:770px) { 
 		  /* tablet */
@@ -78,17 +77,25 @@
 .faces-icons {
   display: flex;
   flex-direction: column;
-  width: 140px;
+  // width: 140px;
     img{
       height: auto;
-      width: 7vw;
+      width: 100px;
       margin-top:10px;
+
+      @media only screen and (max-width:500px) {
+        width: 70px;
+      }
+
+      @media only screen and (max-width:350px) {
+        width: 50px;
+      }
   }
   
 }
 
 .text-name{
-  width: 200px;
+  // width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -102,9 +109,19 @@
     color:gray;
     font-weight:bold ;
     margin-top: 10px;
+    @media only screen and (max-width:500px) {
+      font-size: 14px;;
+    }
+    @media only screen and (max-width:400px) {
+      font-size: 10px;;
+    }
   }
   h5{
     margin-bottom: -28px;
+    @media only screen and (max-width:350px) {
+      margin-bottom: -10px;
+      font-size: 1rem;
+    }
   }
 }
 
@@ -112,17 +129,29 @@
 
 .icons{
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 130px;
-  img{
-    height: auto;
-    width: 4vw;
-  }
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  // img{
+  //   height: auto;
+  //   width: 4vw;
+  // }
 }
 
 .github-icon{
+  width: 30px;
+  margin-right: 5px;
+  @media only screen and (max-width:350px) {
+    width: 25px;
+  }
+}
 
+.linkedin-icon{
+  width: 35px;
+  @media only screen and (max-width:350px) {
+    width: 30px;
+  }
 }
 
 .container-icon{
@@ -141,9 +170,11 @@
 
 .container-rrss1{
   width:100%;
-
 }
 
+#close-button {
+  z-index: 111;
+}
 
 
 
