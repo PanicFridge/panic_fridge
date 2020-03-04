@@ -54,7 +54,7 @@ export default class Ingredients extends Component {
     render (){
         return (
             <div className="Ingredients">
-                <input className="input-searchbar-ingredients" type="text" placeholder="Enter your ingredients here..." onChange = { this.getResults }/>
+                <input className="input-searchbar-ingredients" type="text" placeholder="Enter your ingredient here..." onChange = { this.getResults }/>
                 <Link to="/"><NavbarF /></Link>
                 {this.state.results !== null ?
                     <div className="meals-grid">{ this.printMeals() } </div>:
