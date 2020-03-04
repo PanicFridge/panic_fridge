@@ -56,7 +56,7 @@ export default class Countries extends Component {
         return (
             
             <div className="CountrySearch">
-                <input className="input-searchbar-countries" type="text" placeholder="Type an international cuisine from the list..." onChange = { this.getResults }/>
+                <input className="input-searchbar-countries" type="text" placeholder="Type an international cuisine ....." onChange = { this.getResults }/>
                 {this.state.results ? "" :
                     <div className="countries-list-map">
                         <img className="world-map" src="https://s5.gifyu.com/images/worldmap-list2-01.png" alt="worldmap"/>
