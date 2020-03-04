@@ -38,7 +38,7 @@ class ModalHungry extends Component {
               <li>Want an international cuisine experience? Select World Food.</li>
               <li>Is your fridge full of food? Select Ingredients and search what you can make.</li>
               <li>Feeling adventurous? Click on the Random Recipe!</li>
-              <li>Change of mind? Click on the orange fridge to return to the options.</li>
+              <li>Change of mind? Click on the blue fridge to return to the options.</li>
             </ol>
             </div>
           </ModalBody>

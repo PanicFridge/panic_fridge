@@ -44,7 +44,7 @@ class InfoModal extends Component {
                 </div>
                 <div className="text-name col-7">
                   <h5>Caterina Nicolo</h5>
-                  <p>ccnn1010@gmail.com</p>
+                  <p>cnicolo@outlook.com</p>
                 </div>
                 <div className="icons col-2">
                   <a href="https://github.com/ccnn1010" target="_blank" rel="noopener noreferrer"><img className="github-icon" src="https://s5.gifyu.com/images/github-icon.png" alt="github-icon"/></a>
