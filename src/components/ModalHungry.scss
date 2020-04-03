@@ -1,82 +1,80 @@
- .btn.btn-secondary{
-     background-color: #F8981D;
-     border-color: #F8981D;
-     color: white;
-     font-size: 1.5rem;
-     font-weight: bold;
-     text-decoration: none;
-     text-transform: uppercase;
-     border-radius: 12px;
-     margin-top: -10px;
-    }    
+.btn.btn-secondary{
+    background-color: #F8981D;
+    border-color: #F8981D;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 12px;
+    margin-top: -10px;
+}    
 
-    #close-button{
-        background-color: #5bbcca;
-        border-color: #5bbcca;
-        color: white;
-        font-size: 1.4rem;
-        font-weight: bold;
-        padding: 3px 10px 3px 10px;
-        text-decoration: none;
-        text-transform: uppercase;
-        border-radius: 10px;
-        font-family: 'Roboto';
-    }    
+#close-button{
+    background-color: #5bbcca;
+    border-color: #5bbcca;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 3px 10px 3px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-family: 'Roboto';
+}    
 
-    #close-button:hover {
-        background-color:  #C2CD23;
-        border-color: #C2CD23;
-      } 
+#close-button:hover {
+    background-color:  #C2CD23;
+    border-color: #C2CD23;
+    } 
  /* .modal-backdrop{
         background-color: #F8CB28;
     }  */
-    .modal-footer .btn-primary {
-        color: #fff;
-        background-color: #F8981D;
-        border-color: #F8981D;
-       
-    }
+.modal-footer .btn-primary {
+    color: #fff;
+    background-color: #F8981D;
+    border-color: #F8981D;
+    
+}
 
-  .modal-header p{
-        text-align: center;
-        margin-bottom: 10px;
-        font-size: 2.1rem;
-        padding-top: 15px;
-        letter-spacing: -0.1rem;
-        font-weight: bold;
-        color: #333333;
-        font-family: 'Roboto';
+.modal-header p{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.1rem;
+    padding-top: 15px;
+    letter-spacing: -0.1rem;
+    font-weight: bold;
+    color: #333333;
+    font-family: 'Roboto';
+} 
 
-    } 
-
-    .list{
-        text-align: left;
-        font-size: 1.2rem;
-        line-height: 2rem;
-        margin-bottom: -15px;
-        margin-left: 5%;
-        color: #333333;
-        letter-spacing: 0.1rem;
-        font-family: 'Roboto';
-    }
-
+.list{
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: -15px;
+    margin-left: 5%;
+    color: #333333;
+    letter-spacing: 0.1rem;
+    font-family: 'Roboto';
+}
 
     //get rid of lines in modal
 
-    #modal-header{
-        justify-content: center;
-        border-bottom: none;
-        padding: none;
-        margin-right: 5%;
-        margin-left: 5%;
-        margin-top: -4%;
-    } 
+#modal-header{
+    justify-content: center;
+    border-bottom: none;
+    padding: none;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: -4%;
+} 
 //This change takes line out of modal
-    #modal-footer{
-        border-top: none;
-        justify-content: center;
-     /*    margin-bottom: 10px; */
-    } 
+#modal-footer{
+    border-top: none;
+    justify-content: center;
+    /*    margin-bottom: 10px; */
+} 
 
 //Hungry? modal button with animation
 .wrapperButton{ 
@@ -105,22 +103,22 @@
         border-color: #C2CD23;
       } 
 //This changes the transparent background color from the default grey to yellow
-     .modal-backdrop.show {
-        background-color: #C2CD23;
-        opacity: 0.75;
-     }
+.modal-backdrop.show {
+    background-color: #C2CD23;
+    opacity: 0.75;
+}
 
 
-  .counter {
-        margin-top: -19px;
-        padding: 1px;
-        list-style-type: none;
-      }
+.counter {
+    margin-top: -19px;
+    padding: 1px;
+    list-style-type: none;
+    }
       
-      .counter li {
-        counter-increment: step-counter;
-        margin-bottom: 5%;
-      }
+.counter li {
+    counter-increment: step-counter;
+    margin-bottom: 5%;
+}
       
       .counter li::before {
         content: counter(step-counter);

@@ -14,14 +14,7 @@
 	cursor: pointer;
 	width: 70px;
 	height: auto;
-	// -webkit-transition: width 1s, height 1s;
-  // transition: width 1s, height 1s;
   margin: 20px 50px 2px 1px;
-
-	// &:hover {
-	// 	  width: 90px;
-	// 	  height: auto;
-	// }
 
 	@media only screen and (max-width:770px) { 
 		  /* Smartphone */
@@ -91,8 +84,6 @@
         width: 50px;
       }
   }
-  
-  
 }
 
 .text-name{
@@ -101,7 +92,8 @@
   flex-direction: column;
   justify-content: space-around;
   margin-top: 22px;
-  p{
+
+  p {
     color:gray;
     font-weight:bold ;
     margin-top: 10px;
@@ -113,7 +105,7 @@
     }
   }
   
-  h5{
+  h5 {
     margin-bottom: -28px;
     @media only screen and (max-width:350px) {
       margin-bottom: -10px;
@@ -124,14 +116,9 @@
 
 .icons{
   display: flex;
-  // flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100px;
-  // img{
-  //   height: auto;
-  //   width: 4vw;
-  // }
 }
 
 .github-icon{
@@ -174,37 +161,3 @@
 #close-button {
   z-index: 111;
 }
-
-
-
-
-// .fridge-logo {
-// 	background-image: url('https://s5.gifyu.com/images/fridge-icon-circle-stroke-06.png');
-// 	position: fixed;
-// 	top: 20px;
-// 	left: 45px;
-// 	cursor: pointer;
-// 	width: 6%;
-// 	height: 6%; 
-// 	-webkit-transition: width 1s, height 1s;
-// 	transition: width 1s, height 1s;
-
-// 	&:hover {
-// 		  width: 12%;
-// 		  height: 12%;
-// 	}
-
-// 	@media only screen and (max-width:770px) { 
-// 		  /* Smartphone */
-// 			   width: 10%;
-// 			   height: 10%;
-// 	}
-// 	@media (max-width: 991px){
-		
-// 			display:none;
-// 		}
-// }	
-
-// .items-list-icons {
-//   list-style: none;
-// }

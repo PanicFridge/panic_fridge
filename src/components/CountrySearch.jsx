@@ -1,8 +1,7 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import './CountrySearch.scss';
 import NavbarF from "./NavbarF";
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import NavbarFBottom from './NavbarFBottom';
 const axios = require('axios').default;
 // import Nav from './NavbarF';
@@ -64,7 +63,7 @@ export default class Countries extends Component {
                 <Link to="/"><NavbarF /></Link>
                 {this.state.results !== null ?
                     <div className="meals-grid">{ this.printMeals() }</div> :
-                    <div clasName="another"></div>
+                    <div className="another"></div>
                 } 
                 <NavbarFBottom />
                 

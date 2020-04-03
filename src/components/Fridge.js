@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import * as THREE from "three";
 import * as FBXLoader from "three-fbxloader-offical"
 import OrbitControls  from "three-orbitcontrols"

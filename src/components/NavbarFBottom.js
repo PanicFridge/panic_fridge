@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './NavbarFBottom.scss';
 import {Link} from 'react-router-dom';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import './InfoModal';
 import './InfoModal.scss';
 // import NavbarFBottom from './NavbarFBottom'

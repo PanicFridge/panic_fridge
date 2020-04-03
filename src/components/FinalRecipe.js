@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './FinalRecipe.scss';
-import Routes from './Routes';
 import NavbarF from "./NavbarF";
 import {Link} from "react-router-dom";
 import NavbarFBottom from './NavbarFBottom';
@@ -114,7 +113,7 @@ class FinalRecipe extends Component {
         return (
             <div className="container-fliuid FinalRecipe">
             {
-                this.state.image == undefined
+                this.state.image === undefined
                 ? null
                 : (
                     

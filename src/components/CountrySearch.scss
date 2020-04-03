@@ -20,8 +20,8 @@
 		transform:scale(0.95);
 		}
 }
+
 .card-meal-countries {
-	
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -37,6 +37,7 @@
 	width: unset;            
 	margin: unset;
 }
+
 .title-meal-countries {
 	display: flex;
 	font-size: 1rem;
@@ -44,20 +45,15 @@
 	font-family: 'Raleway', ;
 	font-weight: bolder;
 	color: #2c2c2b;
-	// margin: 0.5rem;
 	justify-content: center ;
-	// text-transform: uppercase;
-	// margin-top: 7%;
 }
 
-.image-recipe-countries {
-		
+.image-recipe-countries {	
 	height: auto;
 	width: 100%;
 	align-self: center;
 	border-radius: 0.5rem;
 	box-shadow: 10px 10px 37px -6px rgba(186,182,186,1);
-
 }
 
 .title-box-countries {
@@ -93,11 +89,13 @@ input{
         outline: none;
     }
 }
+
 .world-map{
 	width: 90vw;
 	align-self: center;
 	justify-self: center;
 }
+
 .another{
     font-size: 0.5 rem;
     font-family: Roboto;

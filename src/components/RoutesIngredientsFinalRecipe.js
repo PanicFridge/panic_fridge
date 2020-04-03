@@ -1,6 +1,6 @@
 import React from 'react'
 import IngredientsFinalRecipe from './IngredientsFinalRecipe'
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 
 

@@ -5,7 +5,7 @@ const Nav = () => {
 
       return (
 
-      <div className='App nav-fridge'>
+      <div className='NavbarF nav-fridge'>
           <div className= 'fridge-log'></div>
       </div>
 )

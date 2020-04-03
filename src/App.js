@@ -1,15 +1,10 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import Fridge from './components/Fridge'
 import './App.scss';
-import {Button,Modal,Container,Card,Navbar} from 'reactstrap';
-import {BrowserRouter as Router, Link} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 import Routes from './components/Routes';
 import RoutesFinalRecipe from './components/RoutesFinalRecipe';
 import RoutesIngredientsFinalRecipe from './components/RoutesIngredientsFinalRecipe';
-import FinalRecipe from './components/FinalRecipe';
-import Home from './components/Home';
-import Countries from './components/CountrySearch'
+
 
 
 class App extends Component {

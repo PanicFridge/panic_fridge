@@ -57,18 +57,21 @@
 	ul {
 		margin: 0px;
 	}
-
 }
+
 .suggestion-icon {
 	width: 9vw;
 	align-self: center;
 }
+
 .ingredients-icon {
 	width: 9vw;
 }
+
 .world-icon {
 	width: 9vw;
 }
+
 .panic-fridge-icon {
 	width: 9vw;
 }
@@ -81,10 +84,8 @@
 	padding-inline-start: 0px;
 	ul {
 		margin: 0;
-		
 	}
 }
-
 
 .footer {
     position: fixed;
@@ -97,10 +98,7 @@
     flex-direction: row;
 	justify-content: space-between;
 	z-index: 9999;
-	
 }
-
-
 
 @media (min-width: 992px){
 
@@ -125,7 +123,6 @@
 		.panic-fridge-icon {
 			width: 11vw;
 		}
-
 	}
 	
 }
@@ -144,7 +141,6 @@
 		.panic-fridge-icon {
 			width: 7vw;
 		}
-
 	}
 	
 }
@@ -163,7 +159,6 @@
 		.panic-fridge-icon {
 			width: 5vw;
 		}
-
 	}
 	
 }

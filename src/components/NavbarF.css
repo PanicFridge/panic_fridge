@@ -3,7 +3,7 @@ nav-fridge {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: -1;
+	z-index: 99;
 }
 .navbar-collapse {
 	display: flex !important;
@@ -19,24 +19,8 @@ nav-fridge {
 	background-position: center;
 	position: fixed;
 	top: 20px;
-	left: 45px;
+	left: 45px;	
 }
-
-/* .navbar-nav {
-	.nav-link.active {
-		color: #5bbcca;
-		font-family: 'Josefin Sans', sans-serif;
-		font-weight: bold;
-	}
-	.nav-link {
-		color: #fb961f;
-		font-weight: bold;
-		&:hover {
-			font-weight: bold;
-			font-style: oblique;
-		}
-	}
-} */
 
 @media (max-width: 991px){
 	.fridge-log{

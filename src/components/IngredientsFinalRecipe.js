@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './IngredientsFinalRecipe.scss';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Routes from './Routes';
 import NavbarF from "./NavbarF";
 import {Link} from "react-router-dom";
 import NavbarFBottom from './NavbarFBottom';
